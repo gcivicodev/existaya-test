@@ -20,6 +20,8 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'D:\Ampps\www\existaya-test\wp-content\plugins\wp-super-cache/' );
 define('DB_NAME', 'existaya');
 
 /** MySQL database username */
