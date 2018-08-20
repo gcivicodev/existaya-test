@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 20-08-2018 a las 00:26:02
+-- Tiempo de generación: 20-08-2018 a las 01:19:12
 -- Versión del servidor: 5.6.37
 -- Versión de PHP: 7.1.8
 
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `option_name` varchar(191) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   `option_value` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `autoload` varchar(20) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT 'yes'
-) ENGINE=InnoDB AUTO_INCREMENT=259 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=288 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Volcado de datos para la tabla `wp_options`
@@ -136,7 +136,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:2:{i:0;s:55:"custom-css-and-javascript/custom-css-and-javascript.php";i:1;s:14:"types/wpcf.php";}', 'yes'),
+(33, 'active_plugins', 'a:4:{i:0;s:55:"custom-css-and-javascript/custom-css-and-javascript.php";i:1;s:14:"types/wpcf.php";i:2;s:23:"wordfence/wordfence.php";i:3;s:27:"wp-super-cache/wp-cache.php";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
@@ -184,7 +184,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (78, 'widget_categories', 'a:2:{i:2;a:4:{s:5:"title";s:0:"";s:5:"count";i:0;s:12:"hierarchical";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (79, 'widget_text', 'a:5:{i:2;a:4:{s:5:"title";s:7:"Find Us";s:4:"text";s:168:"<strong>Address</strong>\n123 Main Street\nNew York, NY 10001\n\n<strong>Hours</strong>\nMonday&mdash;Friday: 9:00AM&ndash;5:00PM\nSaturday &amp; Sunday: 11:00AM&ndash;3:00PM";s:6:"filter";b:1;s:6:"visual";b:1;}i:3;a:4:{s:5:"title";s:15:"About This Site";s:4:"text";s:85:"This may be a good place to introduce yourself and your site or include some credits.";s:6:"filter";b:1;s:6:"visual";b:1;}i:4;a:4:{s:5:"title";s:7:"Find Us";s:4:"text";s:168:"<strong>Address</strong>\n123 Main Street\nNew York, NY 10001\n\n<strong>Hours</strong>\nMonday&mdash;Friday: 9:00AM&ndash;5:00PM\nSaturday &amp; Sunday: 11:00AM&ndash;3:00PM";s:6:"filter";b:1;s:6:"visual";b:1;}i:5;a:4:{s:5:"title";s:15:"About This Site";s:4:"text";s:85:"This may be a good place to introduce yourself and your site or include some credits.";s:6:"filter";b:1;s:6:"visual";b:1;}s:12:"_multiwidget";i:1;}', 'yes'),
 (80, 'widget_rss', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
-(81, 'uninstall_plugins', 'a:1:{s:53:"custom-post-type-widgets/custom-post-type-widgets.php";a:2:{i:0;s:24:"Custom_Post_Type_Widgets";i:1;s:9:"uninstall";}}', 'no'),
+(81, 'uninstall_plugins', 'a:2:{s:53:"custom-post-type-widgets/custom-post-type-widgets.php";a:2:{i:0;s:24:"Custom_Post_Type_Widgets";i:1;s:9:"uninstall";}s:27:"wp-super-cache/wp-cache.php";s:22:"wpsupercache_uninstall";}', 'no'),
 (82, 'timezone_string', '', 'yes'),
 (83, 'page_for_posts', '11', 'yes'),
 (84, 'page_on_front', '8', 'yes'),
@@ -214,12 +214,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (108, 'widget_tag_cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (109, 'widget_nav_menu', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (110, 'widget_custom_html', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
-(111, 'cron', 'a:5:{i:1534727395;a:4:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:34:"wp_privacy_delete_old_export_files";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1534770613;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1534771497;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1537396400;a:1:{s:25:"otgs_send_components_data";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}s:7:"version";i:2;}', 'yes'),
+(111, 'cron', 'a:11:{i:1534727395;a:4:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:34:"wp_privacy_delete_old_export_files";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1534729614;a:1:{s:21:"wordfence_hourly_cron";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:6:"hourly";s:4:"args";a:0:{}s:8:"interval";i:3600;}}}i:1534770613;a:2:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}s:25:"delete_expired_transients";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1534771497;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1534812414;a:1:{s:20:"wordfence_daily_cron";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1534821000;a:1:{s:30:"wordfence_start_scheduled_scan";a:1:{s:32:"48ba84bfb0d1029fac4e677f03798d33";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:1534821000;}}}}i:1535080200;a:1:{s:30:"wordfence_start_scheduled_scan";a:1:{s:32:"e11653fb6d774b2970e40a91b34a3719";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:1535080200;}}}}i:1535339400;a:1:{s:30:"wordfence_start_scheduled_scan";a:1:{s:32:"d25056e63146f13d4788ab6baf17ee01";a:2:{s:8:"schedule";b:0;s:4:"args";a:1:{i:0;i:1535339400;}}}}i:1535385600;a:1:{s:31:"wordfence_email_activity_report";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}i:1537396400;a:1:{s:25:"otgs_send_components_data";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:2:{s:8:"schedule";b:0;s:4:"args";a:0:{}}}}s:7:"version";i:2;}', 'yes'),
 (112, 'theme_mods_twentyseventeen', 'a:8:{s:18:"custom_css_post_id";i:-1;s:18:"nav_menu_locations";a:2:{s:3:"top";i:2;s:6:"social";i:3;}s:7:"panel_1";i:12;s:7:"panel_2";i:9;s:7:"panel_3";i:11;s:7:"panel_4";i:10;s:11:"custom_logo";i:15;s:16:"sidebars_widgets";a:2:{s:4:"time";i:1534685543;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:3:{i:0;s:6:"text-2";i:1;s:8:"search-3";i:2;s:6:"text-3";}s:9:"sidebar-2";a:1:{i:0;s:6:"text-4";}s:9:"sidebar-3";a:2:{i:0;s:6:"text-5";i:1;s:8:"search-4";}}}}', 'yes'),
-(116, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.8.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.8.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.9.8-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.9.8-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.9.8";s:7:"version";s:5:"4.9.8";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1534717877;s:15:"version_checked";s:5:"4.9.8";s:12:"translations";a:0:{}}', 'no'),
+(116, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.8.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.9.8.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.9.8-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.9.8-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:5:"4.9.8";s:7:"version";s:5:"4.9.8";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"4.7";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1534726570;s:15:"version_checked";s:5:"4.9.8";s:12:"translations";a:0:{}}', 'no'),
 (122, '_site_transient_timeout_browser_01fe6d96f512df15cc1b10345d6b37d9', '1535289013', 'no'),
 (123, '_site_transient_browser_01fe6d96f512df15cc1b10345d6b37d9', 'a:10:{s:4:"name";s:6:"Chrome";s:7:"version";s:13:"68.0.3440.106";s:8:"platform";s:7:"Windows";s:10:"update_url";s:29:"https://www.google.com/chrome";s:7:"img_src";s:43:"http://s.w.org/images/browsers/chrome.png?1";s:11:"img_src_ssl";s:44:"https://s.w.org/images/browsers/chrome.png?1";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;s:6:"mobile";b:0;}', 'no'),
-(125, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1534766271', 'no'),
+(125, '_site_transient_timeout_community-events-d41d8cd98f00b204e9800998ecf8427e', '1534769772', 'no'),
 (126, '_site_transient_community-events-d41d8cd98f00b204e9800998ecf8427e', 'a:2:{s:8:"location";a:1:{s:2:"ip";b:0;}s:6:"events";a:0:{}}', 'no'),
 (127, 'can_compress_scripts', '1', 'no'),
 (128, '_transient_timeout_feed_ac0b00fe65abe10e0c5b588f3ed8c7ca', '1534727415', 'no');
@@ -237,29 +237,24 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (136, '_transient_timeout_dash_v2_88ae138922fe95674369b1cb3d215a2b', '1534727417', 'no'),
 (137, '_transient_dash_v2_88ae138922fe95674369b1cb3d215a2b', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2018/08/wordpress-4-9-8-maintenance-release/''>WordPress 4.9.8 Maintenance Release</a></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wptavern.com/my-gutenberg-experience-part-three''>WPTavern: My Gutenberg Experience: Part Three</a></li><li><a class=''rsswidget'' href=''https://wptavern.com/gutenberg-3-6-adds-new-icons-for-all-core-blocks''>WPTavern: Gutenberg 3.6 Adds New Icons for All Core Blocks</a></li><li><a class=''rsswidget'' href=''https://odd.blog/2018/08/17/wp-super-cache-1-6-3/''>Donncha: WP Super Cache 1.6.3</a></li></ul></div>', 'no'),
 (147, 'nav_menu_options', 'a:1:{s:8:"auto_add";a:0:{}}', 'yes'),
-(158, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1534717878;s:7:"checked";a:5:{s:13:"twentyfifteen";s:3:"2.0";s:15:"twentyseventeen";s:3:"1.7";s:13:"twentysixteen";s:3:"1.5";s:26:"wp-bootstrap-starter-child";s:0:"";s:20:"wp-bootstrap-starter";s:5:"3.1.0";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
+(158, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1534726072;s:7:"checked";a:5:{s:13:"twentyfifteen";s:3:"2.0";s:15:"twentyseventeen";s:3:"1.7";s:13:"twentysixteen";s:3:"1.5";s:26:"wp-bootstrap-starter-child";s:0:"";s:20:"wp-bootstrap-starter";s:5:"3.1.0";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'no'),
 (160, 'current_theme', 'wp-bootstrap-starter-child', 'yes'),
 (161, 'theme_mods_wp-bootstrap-starter', 'a:5:{i:0;b:0;s:18:"nav_menu_locations";a:1:{s:7:"primary";i:5;}s:18:"custom_css_post_id";i:-1;s:25:"wp_bootstrap_starter_logo";s:68:"http://localhost/existaya-test/wp-content/uploads/2018/08/logo-1.png";s:16:"sidebars_widgets";a:2:{s:4:"time";i:1534689036;s:4:"data";a:5:{s:19:"wp_inactive_widgets";a:8:{i:0;s:10:"archives-2";i:1;s:6:"meta-2";i:2;s:8:"search-2";i:3;s:12:"categories-2";i:4;s:14:"recent-posts-2";i:5;s:17:"recent-comments-2";i:6;s:6:"text-5";i:7;s:8:"search-4";}s:9:"sidebar-1";a:4:{i:0;s:6:"text-2";i:1;s:8:"search-3";i:2;s:6:"text-3";i:3;s:6:"text-4";}s:8:"footer-1";a:0:{}s:8:"footer-2";a:0:{}s:8:"footer-3";a:0:{}}}}', 'yes'),
 (162, 'theme_switched', '', 'yes'),
 (163, 'triggered_welcomet', '1', 'yes'),
 (177, 'theme_mods_wp-bootstrap-starter-child', 'a:4:{i:0;b:0;s:18:"nav_menu_locations";a:1:{s:7:"primary";i:5;}s:18:"custom_css_post_id";i:-1;s:25:"wp_bootstrap_starter_logo";s:68:"http://localhost/existaya-test/wp-content/uploads/2018/08/logo-1.png";}', 'yes'),
-(189, '_transient_timeout_plugin_slugs', '1534804401', 'no'),
-(190, '_transient_plugin_slugs', 'a:4:{i:0;s:19:"akismet/akismet.php";i:1;s:55:"custom-css-and-javascript/custom-css-and-javascript.php";i:2;s:9:"hello.php";i:3;s:14:"types/wpcf.php";}', 'no'),
+(189, '_transient_timeout_plugin_slugs', '1534812487', 'no'),
+(190, '_transient_plugin_slugs', 'a:6:{i:0;s:19:"akismet/akismet.php";i:1;s:55:"custom-css-and-javascript/custom-css-and-javascript.php";i:2;s:9:"hello.php";i:3;s:14:"types/wpcf.php";i:4;s:23:"wordfence/wordfence.php";i:5;s:27:"wp-super-cache/wp-cache.php";}', 'no'),
 (191, 'recently_activated', 'a:2:{s:43:"custom-post-type-ui/custom-post-type-ui.php";i:1534717774;s:53:"custom-post-type-widgets/custom-post-type-widgets.php";i:1534717570;}', 'yes'),
-(192, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1534725660', 'no'),
-(193, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:"stdClass":100:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";i:4493;}s:11:"woocommerce";a:3:{s:4:"name";s:11:"woocommerce";s:4:"slug";s:11:"woocommerce";s:5:"count";i:2940;}s:4:"post";a:3:{s:4:"name";s:4:"post";s:4:"slug";s:4:"post";s:5:"count";i:2580;}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";i:2447;}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";i:1882;}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";i:1673;}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";i:1670;}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";i:1458;}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";i:1405;}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";i:1398;}s:8:"facebook";a:3:{s:4:"name";s:8:"facebook";s:4:"slug";s:8:"facebook";s:5:"count";i:1392;}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";i:1328;}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";i:1284;}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";i:1237;}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";i:1111;}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";i:1070;}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";i:1033;}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";i:1030;}s:9:"ecommerce";a:3:{s:4:"name";s:9:"ecommerce";s:4:"slug";s:9:"ecommerce";s:5:"count";i:919;}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";i:888;}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";i:834;}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";i:811;}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";i:806;}s:8:"security";a:3:{s:4:"name";s:8:"security";s:4:"slug";s:8:"security";s:5:"count";i:729;}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";i:703;}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";i:695;}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";i:689;}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";i:682;}s:6:"slider";a:3:{s:4:"name";s:6:"slider";s:4:"slug";s:6:"slider";s:5:"count";i:672;}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";i:665;}s:10:"e-commerce";a:3:{s:4:"name";s:10:"e-commerce";s:4:"slug";s:10:"e-commerce";s:5:"count";i:659;}s:9:"analytics";a:3:{s:4:"name";s:9:"analytics";s:4:"slug";s:9:"analytics";s:5:"count";i:658;}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";i:644;}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";i:642;}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";i:617;}s:6:"search";a:3:{s:4:"name";s:6:"search";s:4:"slug";s:6:"search";s:5:"count";i:613;}s:4:"form";a:3:{s:4:"name";s:4:"form";s:4:"slug";s:4:"form";s:5:"count";i:610;}s:4:"ajax";a:3:{s:4:"name";s:4:"ajax";s:4:"slug";s:4:"ajax";s:5:"count";i:607;}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";i:600;}s:4:"menu";a:3:{s:4:"name";s:4:"menu";s:4:"slug";s:4:"menu";s:5:"count";i:595;}s:5:"embed";a:3:{s:4:"name";s:5:"embed";s:4:"slug";s:5:"embed";s:5:"count";i:573;}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";i:550;}s:3:"css";a:3:{s:4:"name";s:3:"css";s:4:"slug";s:3:"css";s:5:"count";i:544;}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";i:543;}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";i:530;}s:5:"share";a:3:{s:4:"name";s:5:"share";s:4:"slug";s:5:"share";s:5:"count";i:523;}s:6:"editor";a:3:{s:4:"name";s:6:"editor";s:4:"slug";s:6:"editor";s:5:"count";i:513;}s:5:"theme";a:3:{s:4:"name";s:5:"theme";s:4:"slug";s:5:"theme";s:5:"count";i:513;}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";i:513;}s:10:"responsive";a:3:{s:4:"name";s:10:"responsive";s:4:"slug";s:10:"responsive";s:5:"count";i:506;}s:9:"dashboard";a:3:{s:4:"name";s:9:"dashboard";s:4:"slug";s:9:"dashboard";s:5:"count";i:494;}s:6:"custom";a:3:{s:4:"name";s:6:"custom";s:4:"slug";s:6:"custom";s:5:"count";i:490;}s:12:"contact-form";a:3:{s:4:"name";s:12:"contact form";s:4:"slug";s:12:"contact-form";s:5:"count";i:490;}s:10:"categories";a:3:{s:4:"name";s:10:"categories";s:4:"slug";s:10:"categories";s:5:"count";i:484;}s:9:"affiliate";a:3:{s:4:"name";s:9:"affiliate";s:4:"slug";s:9:"affiliate";s:5:"count";i:480;}s:3:"ads";a:3:{s:4:"name";s:3:"ads";s:4:"slug";s:3:"ads";s:5:"count";i:479;}s:6:"button";a:3:{s:4:"name";s:6:"button";s:4:"slug";s:6:"button";s:5:"count";i:459;}s:4:"tags";a:3:{s:4:"name";s:4:"tags";s:4:"slug";s:4:"tags";s:5:"count";i:457;}s:4:"user";a:3:{s:4:"name";s:4:"user";s:4:"slug";s:4:"user";s:5:"count";i:452;}s:7:"contact";a:3:{s:4:"name";s:7:"contact";s:4:"slug";s:7:"contact";s:5:"count";i:441;}s:6:"mobile";a:3:{s:4:"name";s:6:"mobile";s:4:"slug";s:6:"mobile";s:5:"count";i:439;}s:3:"api";a:3:{s:4:"name";s:3:"api";s:4:"slug";s:3:"api";s:5:"count";i:436;}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";i:422;}s:5:"users";a:3:{s:4:"name";s:5:"users";s:4:"slug";s:5:"users";s:5:"count";i:419;}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";i:417;}s:6:"events";a:3:{s:4:"name";s:6:"events";s:4:"slug";s:6:"events";s:5:"count";i:416;}s:9:"slideshow";a:3:{s:4:"name";s:9:"slideshow";s:4:"slug";s:9:"slideshow";s:5:"count";i:414;}s:7:"payment";a:3:{s:4:"name";s:7:"payment";s:4:"slug";s:7:"payment";s:5:"count";i:414;}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";i:408;}s:10:"navigation";a:3:{s:4:"name";s:10:"navigation";s:4:"slug";s:10:"navigation";s:5:"count";i:389;}s:10:"statistics";a:3:{s:4:"name";s:10:"statistics";s:4:"slug";s:10:"statistics";s:5:"count";i:388;}s:8:"calendar";a:3:{s:4:"name";s:8:"calendar";s:4:"slug";s:8:"calendar";s:5:"count";i:372;}s:15:"payment-gateway";a:3:{s:4:"name";s:15:"payment gateway";s:4:"slug";s:15:"payment-gateway";s:5:"count";i:371;}s:4:"news";a:3:{s:4:"name";s:4:"news";s:4:"slug";s:4:"news";s:5:"count";i:371;}s:10:"shortcodes";a:3:{s:4:"name";s:10:"shortcodes";s:4:"slug";s:10:"shortcodes";s:5:"count";i:366;}s:5:"popup";a:3:{s:4:"name";s:5:"popup";s:4:"slug";s:5:"popup";s:5:"count";i:362;}s:4:"chat";a:3:{s:4:"name";s:4:"chat";s:4:"slug";s:4:"chat";s:5:"count";i:358;}s:9:"marketing";a:3:{s:4:"name";s:9:"marketing";s:4:"slug";s:9:"marketing";s:5:"count";i:358;}s:12:"social-media";a:3:{s:4:"name";s:12:"social media";s:4:"slug";s:12:"social-media";s:5:"count";i:350;}s:7:"plugins";a:3:{s:4:"name";s:7:"plugins";s:4:"slug";s:7:"plugins";s:5:"count";i:348;}s:10:"newsletter";a:3:{s:4:"name";s:10:"newsletter";s:4:"slug";s:10:"newsletter";s:5:"count";i:346;}s:9:"multisite";a:3:{s:4:"name";s:9:"multisite";s:4:"slug";s:9:"multisite";s:5:"count";i:344;}s:4:"code";a:3:{s:4:"name";s:4:"code";s:4:"slug";s:4:"code";s:5:"count";i:344;}s:4:"meta";a:3:{s:4:"name";s:4:"meta";s:4:"slug";s:4:"meta";s:5:"count";i:339;}s:3:"url";a:3:{s:4:"name";s:3:"url";s:4:"slug";s:3:"url";s:5:"count";i:338;}s:4:"list";a:3:{s:4:"name";s:4:"list";s:4:"slug";s:4:"list";s:5:"count";i:334;}s:8:"redirect";a:3:{s:4:"name";s:8:"redirect";s:4:"slug";s:8:"redirect";s:5:"count";i:329;}s:5:"forms";a:3:{s:4:"name";s:5:"forms";s:4:"slug";s:5:"forms";s:5:"count";i:325;}s:11:"advertising";a:3:{s:4:"name";s:11:"advertising";s:4:"slug";s:11:"advertising";s:5:"count";i:312;}s:6:"simple";a:3:{s:4:"name";s:6:"simple";s:4:"slug";s:6:"simple";s:5:"count";i:309;}s:16:"custom-post-type";a:3:{s:4:"name";s:16:"custom post type";s:4:"slug";s:16:"custom-post-type";s:5:"count";i:307;}s:3:"tag";a:3:{s:4:"name";s:3:"tag";s:4:"slug";s:3:"tag";s:5:"count";i:303;}s:7:"adsense";a:3:{s:4:"name";s:7:"adsense";s:4:"slug";s:7:"adsense";s:5:"count";i:303;}s:11:"performance";a:3:{s:4:"name";s:11:"performance";s:4:"slug";s:11:"performance";s:5:"count";i:303;}s:12:"notification";a:3:{s:4:"name";s:12:"notification";s:4:"slug";s:12:"notification";s:5:"count";i:302;}s:4:"html";a:3:{s:4:"name";s:4:"html";s:4:"slug";s:4:"html";s:5:"count";i:301;}s:8:"tracking";a:3:{s:4:"name";s:8:"tracking";s:4:"slug";s:8:"tracking";s:5:"count";i:299;}s:16:"google-analytics";a:3:{s:4:"name";s:16:"google analytics";s:4:"slug";s:16:"google-analytics";s:5:"count";i:298;}s:6:"author";a:3:{s:4:"name";s:6:"author";s:4:"slug";s:6:"author";s:5:"count";i:296;}s:14:"contact-form-7";a:3:{s:4:"name";s:14:"contact form 7";s:4:"slug";s:14:"contact-form-7";s:5:"count";i:290;}}', 'no'),
 (198, 'hm_custom_css_js_first_activate', '1534714880', 'yes'),
 (199, 'hm_custom_javascript_minify', '1', 'yes'),
 (200, 'hm_custom_javascript_ver', '1534724430', 'yes'),
-(219, '_site_transient_timeout_theme_roots', '1534719276', 'no'),
-(220, '_site_transient_theme_roots', 'a:5:{s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";s:26:"wp-bootstrap-starter-child";s:7:"/themes";s:20:"wp-bootstrap-starter";s:7:"/themes";}', 'no'),
 (222, 'widget_custom-post-type-archives', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (223, 'widget_custom-post-type-categories', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (224, 'widget_custom-post-type-calendar', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (225, 'widget_custom-post-type-tag-cloud', 'a:1:{s:12:"_multiwidget";i:1;}', 'yes'),
 (230, 'cptui_new_install', 'false', 'yes'),
 (231, 'cptui_post_types', 'a:1:{s:7:"sliders";a:28:{s:4:"name";s:7:"sliders";s:5:"label";s:7:"Sliders";s:14:"singular_label";s:6:"Slider";s:11:"description";s:68:"Custom Post Type to add images that will be used for create sliders.";s:6:"public";s:4:"true";s:18:"publicly_queryable";s:4:"true";s:7:"show_ui";s:4:"true";s:17:"show_in_nav_menus";s:4:"true";s:12:"show_in_rest";s:5:"false";s:9:"rest_base";s:0:"";s:11:"has_archive";s:5:"false";s:18:"has_archive_string";s:0:"";s:19:"exclude_from_search";s:5:"false";s:15:"capability_type";s:4:"post";s:12:"hierarchical";s:5:"false";s:7:"rewrite";s:4:"true";s:12:"rewrite_slug";s:0:"";s:17:"rewrite_withfront";s:4:"true";s:9:"query_var";s:4:"true";s:14:"query_var_slug";s:0:"";s:13:"menu_position";s:0:"";s:12:"show_in_menu";s:4:"true";s:19:"show_in_menu_string";s:0:"";s:9:"menu_icon";s:0:"";s:8:"supports";a:3:{i:0;s:5:"title";i:1;s:6:"editor";i:2;s:9:"thumbnail";}s:10:"taxonomies";a:0:{}s:6:"labels";a:23:{s:9:"menu_name";s:0:"";s:9:"all_items";s:0:"";s:7:"add_new";s:0:"";s:12:"add_new_item";s:0:"";s:9:"edit_item";s:0:"";s:8:"new_item";s:0:"";s:9:"view_item";s:0:"";s:10:"view_items";s:0:"";s:12:"search_items";s:0:"";s:9:"not_found";s:0:"";s:18:"not_found_in_trash";s:0:"";s:17:"parent_item_colon";s:0:"";s:14:"featured_image";s:0:"";s:18:"set_featured_image";s:0:"";s:21:"remove_featured_image";s:0:"";s:18:"use_featured_image";s:0:"";s:8:"archives";s:0:"";s:16:"insert_into_item";s:0:"";s:21:"uploaded_to_this_item";s:0:"";s:17:"filter_items_list";s:0:"";s:21:"items_list_navigation";s:0:"";s:10:"items_list";s:0:"";s:10:"attributes";s:0:"";}s:15:"custom_supports";s:0:"";}}', 'yes'),
-(235, '_site_transient_update_plugins', 'O:8:"stdClass":5:{s:12:"last_checked";i:1534717996;s:7:"checked";a:4:{s:19:"akismet/akismet.php";s:5:"4.0.8";s:55:"custom-css-and-javascript/custom-css-and-javascript.php";s:5:"2.0.9";s:9:"hello.php";s:3:"1.7";s:14:"types/wpcf.php";s:5:"2.3.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:4:{s:19:"akismet/akismet.php";O:8:"stdClass":9:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"4.0.8";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.4.0.8.zip";s:5:"icons";a:2:{s:2:"2x";s:59:"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272";s:2:"1x";s:59:"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272";}s:7:"banners";a:1:{s:2:"1x";s:61:"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904";}s:11:"banners_rtl";a:0:{}}s:55:"custom-css-and-javascript/custom-css-and-javascript.php";O:8:"stdClass":9:{s:2:"id";s:39:"w.org/plugins/custom-css-and-javascript";s:4:"slug";s:25:"custom-css-and-javascript";s:6:"plugin";s:55:"custom-css-and-javascript/custom-css-and-javascript.php";s:11:"new_version";s:5:"2.0.9";s:3:"url";s:56:"https://wordpress.org/plugins/custom-css-and-javascript/";s:7:"package";s:74:"https://downloads.wordpress.org/plugin/custom-css-and-javascript.2.0.9.zip";s:5:"icons";a:2:{s:2:"2x";s:78:"https://ps.w.org/custom-css-and-javascript/assets/icon-256x256.png?rev=1311319";s:2:"1x";s:78:"https://ps.w.org/custom-css-and-javascript/assets/icon-128x128.png?rev=1311319";}s:7:"banners";a:2:{s:2:"2x";s:81:"https://ps.w.org/custom-css-and-javascript/assets/banner-1544x500.png?rev=1333199";s:2:"1x";s:80:"https://ps.w.org/custom-css-and-javascript/assets/banner-772x250.png?rev=1333199";}s:11:"banners_rtl";a:0:{}}s:9:"hello.php";O:8:"stdClass":9:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";s:5:"icons";a:2:{s:2:"2x";s:63:"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907";s:2:"1x";s:63:"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907";}s:7:"banners";a:1:{s:2:"1x";s:65:"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342";}s:11:"banners_rtl";a:0:{}}s:14:"types/wpcf.php";O:8:"stdClass":9:{s:2:"id";s:19:"w.org/plugins/types";s:4:"slug";s:5:"types";s:6:"plugin";s:14:"types/wpcf.php";s:11:"new_version";s:5:"2.3.3";s:3:"url";s:36:"https://wordpress.org/plugins/types/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/types.2.3.3.zip";s:5:"icons";a:3:{s:2:"2x";s:58:"https://ps.w.org/types/assets/icon-256x256.png?rev=1625832";s:2:"1x";s:50:"https://ps.w.org/types/assets/icon.svg?rev=1009056";s:3:"svg";s:50:"https://ps.w.org/types/assets/icon.svg?rev=1009056";}s:7:"banners";a:2:{s:2:"2x";s:61:"https://ps.w.org/types/assets/banner-1544x500.png?rev=1681816";s:2:"1x";s:60:"https://ps.w.org/types/assets/banner-772x250.png?rev=1681816";}s:11:"banners_rtl";a:0:{}}}}', 'no'),
 (236, 'WPCF_VERSION', '2.3.3', 'no'),
 (237, 'wpcf-version', '2.3.3', 'yes');
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -274,8 +269,24 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (245, 'wpcf_post_relationship', 'a:0:{}', 'yes'),
 (246, 'wpcf-fields', 'a:6:{s:5:"image";a:8:{s:2:"id";s:5:"image";s:4:"slug";s:5:"image";s:4:"type";s:5:"image";s:4:"name";s:5:"Image";s:11:"description";s:0:"";s:4:"data";a:9:{s:13:"slug-pre-save";s:5:"image";s:11:"placeholder";s:0:"";s:18:"user_default_value";s:0:"";s:10:"repetitive";s:1:"0";s:8:"validate";a:2:{s:8:"required";a:3:{s:6:"active";s:1:"1";s:5:"value";s:4:"true";s:7:"message";s:23:"This field is required.";}s:4:"url2";a:3:{s:6:"active";s:1:"1";s:7:"message";s:60:"Please enter a valid URL address pointing to the image file.";s:17:"suppress_for_cred";b:1;}}s:10:"custom_use";s:0:"";s:19:"conditional_display";a:0:{}s:10:"submit-key";s:5:"image";s:16:"disabled_by_type";i:0;}s:8:"meta_key";s:10:"wpcf-image";s:9:"meta_type";s:8:"postmeta";}s:6:"line-1";a:8:{s:2:"id";s:6:"line-1";s:4:"slug";s:6:"line-1";s:4:"type";s:8:"textarea";s:4:"name";s:6:"Line 1";s:11:"description";s:0:"";s:4:"data";a:9:{s:13:"slug-pre-save";s:6:"line-1";s:11:"placeholder";s:0:"";s:18:"user_default_value";s:0:"";s:10:"repetitive";s:1:"0";s:8:"validate";a:1:{s:8:"required";a:3:{s:6:"active";s:1:"1";s:5:"value";s:4:"true";s:7:"message";s:23:"This field is required.";}}s:10:"custom_use";s:0:"";s:19:"conditional_display";a:0:{}s:10:"submit-key";s:6:"line-1";s:16:"disabled_by_type";i:0;}s:8:"meta_key";s:11:"wpcf-line-1";s:9:"meta_type";s:8:"postmeta";}s:6:"line-2";a:8:{s:2:"id";s:6:"line-2";s:4:"slug";s:6:"line-2";s:4:"type";s:8:"textarea";s:4:"name";s:6:"Line 2";s:11:"description";s:0:"";s:4:"data";a:9:{s:13:"slug-pre-save";s:6:"line-2";s:11:"placeholder";s:0:"";s:18:"user_default_value";s:0:"";s:10:"repetitive";s:1:"0";s:8:"validate";a:1:{s:8:"required";a:3:{s:6:"active";s:1:"1";s:5:"value";s:4:"true";s:7:"message";s:23:"This field is required.";}}s:10:"custom_use";s:0:"";s:19:"conditional_display";a:0:{}s:10:"submit-key";s:6:"line-2";s:16:"disabled_by_type";i:0;}s:8:"meta_key";s:11:"wpcf-line-2";s:9:"meta_type";s:8:"postmeta";}s:11:"application";a:8:{s:2:"id";s:11:"application";s:4:"slug";s:11:"application";s:4:"type";s:8:"textarea";s:4:"name";s:11:"Application";s:11:"description";s:0:"";s:4:"data";a:9:{s:13:"slug-pre-save";s:11:"application";s:11:"placeholder";s:0:"";s:18:"user_default_value";s:0:"";s:10:"repetitive";s:1:"0";s:8:"validate";a:1:{s:8:"required";a:3:{s:6:"active";s:1:"1";s:5:"value";s:4:"true";s:7:"message";s:23:"This field is required.";}}s:10:"custom_use";s:0:"";s:19:"conditional_display";a:0:{}s:10:"submit-key";s:11:"application";s:16:"disabled_by_type";i:0;}s:8:"meta_key";s:16:"wpcf-application";s:9:"meta_type";s:8:"postmeta";}s:4:"from";a:8:{s:2:"id";s:4:"from";s:4:"slug";s:4:"from";s:4:"type";s:4:"date";s:4:"name";s:4:"From";s:11:"description";s:0:"";s:4:"data";a:9:{s:13:"slug-pre-save";s:4:"from";s:11:"placeholder";s:0:"";s:13:"date_and_time";s:8:"and_time";s:10:"repetitive";s:1:"0";s:8:"validate";a:2:{s:8:"required";a:3:{s:6:"active";s:1:"1";s:5:"value";s:4:"true";s:7:"message";s:23:"This field is required.";}s:4:"date";a:4:{s:6:"active";s:1:"1";s:6:"format";s:3:"mdy";s:7:"pattern";s:12:"check.format";s:7:"message";s:26:"Please enter a valid date.";}}s:10:"custom_use";s:0:"";s:19:"conditional_display";a:0:{}s:10:"submit-key";s:4:"from";s:16:"disabled_by_type";i:0;}s:8:"meta_key";s:9:"wpcf-from";s:9:"meta_type";s:8:"postmeta";}s:2:"to";a:8:{s:2:"id";s:2:"to";s:4:"slug";s:2:"to";s:4:"type";s:4:"date";s:4:"name";s:2:"To";s:11:"description";s:0:"";s:4:"data";a:9:{s:13:"slug-pre-save";s:2:"to";s:11:"placeholder";s:0:"";s:13:"date_and_time";s:8:"and_time";s:10:"repetitive";s:1:"0";s:8:"validate";a:2:{s:8:"required";a:3:{s:6:"active";s:1:"1";s:5:"value";s:4:"true";s:7:"message";s:23:"This field is required.";}s:4:"date";a:4:{s:6:"active";s:1:"1";s:6:"format";s:3:"mdy";s:7:"pattern";s:12:"check.format";s:7:"message";s:26:"Please enter a valid date.";}}s:10:"custom_use";s:0:"";s:19:"conditional_display";a:0:{}s:10:"submit-key";s:2:"to";s:16:"disabled_by_type";i:0;}s:8:"meta_key";s:7:"wpcf-to";s:9:"meta_type";s:8:"postmeta";}}', 'yes'),
 (249, 'category_children', 'a:0:{}', 'yes'),
-(250, '_wpcf_promo_tabs', 'a:2:{s:8:"selected";i:1;s:4:"time";i:1534720187;}', 'yes'),
-(258, '_transient_is_multi_author', '0', 'yes');
+(250, '_wpcf_promo_tabs', 'a:2:{s:8:"selected";i:2;s:4:"time";i:1534726322;}', 'yes'),
+(259, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1534736730', 'no'),
+(260, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:"stdClass":100:{s:6:"widget";a:3:{s:4:"name";s:6:"widget";s:4:"slug";s:6:"widget";s:5:"count";i:4493;}s:11:"woocommerce";a:3:{s:4:"name";s:11:"woocommerce";s:4:"slug";s:11:"woocommerce";s:5:"count";i:2940;}s:4:"post";a:3:{s:4:"name";s:4:"post";s:4:"slug";s:4:"post";s:5:"count";i:2580;}s:5:"admin";a:3:{s:4:"name";s:5:"admin";s:4:"slug";s:5:"admin";s:5:"count";i:2446;}s:5:"posts";a:3:{s:4:"name";s:5:"posts";s:4:"slug";s:5:"posts";s:5:"count";i:1882;}s:9:"shortcode";a:3:{s:4:"name";s:9:"shortcode";s:4:"slug";s:9:"shortcode";s:5:"count";i:1673;}s:8:"comments";a:3:{s:4:"name";s:8:"comments";s:4:"slug";s:8:"comments";s:5:"count";i:1670;}s:7:"twitter";a:3:{s:4:"name";s:7:"twitter";s:4:"slug";s:7:"twitter";s:5:"count";i:1458;}s:6:"images";a:3:{s:4:"name";s:6:"images";s:4:"slug";s:6:"images";s:5:"count";i:1404;}s:6:"google";a:3:{s:4:"name";s:6:"google";s:4:"slug";s:6:"google";s:5:"count";i:1398;}s:8:"facebook";a:3:{s:4:"name";s:8:"facebook";s:4:"slug";s:8:"facebook";s:5:"count";i:1392;}s:5:"image";a:3:{s:4:"name";s:5:"image";s:4:"slug";s:5:"image";s:5:"count";i:1328;}s:7:"sidebar";a:3:{s:4:"name";s:7:"sidebar";s:4:"slug";s:7:"sidebar";s:5:"count";i:1284;}s:3:"seo";a:3:{s:4:"name";s:3:"seo";s:4:"slug";s:3:"seo";s:5:"count";i:1237;}s:7:"gallery";a:3:{s:4:"name";s:7:"gallery";s:4:"slug";s:7:"gallery";s:5:"count";i:1111;}s:4:"page";a:3:{s:4:"name";s:4:"page";s:4:"slug";s:4:"page";s:5:"count";i:1070;}s:5:"email";a:3:{s:4:"name";s:5:"email";s:4:"slug";s:5:"email";s:5:"count";i:1033;}s:6:"social";a:3:{s:4:"name";s:6:"social";s:4:"slug";s:6:"social";s:5:"count";i:1030;}s:9:"ecommerce";a:3:{s:4:"name";s:9:"ecommerce";s:4:"slug";s:9:"ecommerce";s:5:"count";i:919;}s:5:"login";a:3:{s:4:"name";s:5:"login";s:4:"slug";s:5:"login";s:5:"count";i:888;}s:5:"links";a:3:{s:4:"name";s:5:"links";s:4:"slug";s:5:"links";s:5:"count";i:834;}s:7:"widgets";a:3:{s:4:"name";s:7:"widgets";s:4:"slug";s:7:"widgets";s:5:"count";i:811;}s:5:"video";a:3:{s:4:"name";s:5:"video";s:4:"slug";s:5:"video";s:5:"count";i:806;}s:8:"security";a:3:{s:4:"name";s:8:"security";s:4:"slug";s:8:"security";s:5:"count";i:729;}s:7:"content";a:3:{s:4:"name";s:7:"content";s:4:"slug";s:7:"content";s:5:"count";i:703;}s:10:"buddypress";a:3:{s:4:"name";s:10:"buddypress";s:4:"slug";s:10:"buddypress";s:5:"count";i:695;}s:3:"rss";a:3:{s:4:"name";s:3:"rss";s:4:"slug";s:3:"rss";s:5:"count";i:689;}s:4:"spam";a:3:{s:4:"name";s:4:"spam";s:4:"slug";s:4:"spam";s:5:"count";i:682;}s:6:"slider";a:3:{s:4:"name";s:6:"slider";s:4:"slug";s:6:"slider";s:5:"count";i:672;}s:5:"pages";a:3:{s:4:"name";s:5:"pages";s:4:"slug";s:5:"pages";s:5:"count";i:665;}s:10:"e-commerce";a:3:{s:4:"name";s:10:"e-commerce";s:4:"slug";s:10:"e-commerce";s:5:"count";i:659;}s:9:"analytics";a:3:{s:4:"name";s:9:"analytics";s:4:"slug";s:9:"analytics";s:5:"count";i:658;}s:5:"media";a:3:{s:4:"name";s:5:"media";s:4:"slug";s:5:"media";s:5:"count";i:644;}s:6:"jquery";a:3:{s:4:"name";s:6:"jquery";s:4:"slug";s:6:"jquery";s:5:"count";i:642;}s:4:"feed";a:3:{s:4:"name";s:4:"feed";s:4:"slug";s:4:"feed";s:5:"count";i:617;}s:6:"search";a:3:{s:4:"name";s:6:"search";s:4:"slug";s:6:"search";s:5:"count";i:613;}s:4:"form";a:3:{s:4:"name";s:4:"form";s:4:"slug";s:4:"form";s:5:"count";i:610;}s:4:"ajax";a:3:{s:4:"name";s:4:"ajax";s:4:"slug";s:4:"ajax";s:5:"count";i:607;}s:8:"category";a:3:{s:4:"name";s:8:"category";s:4:"slug";s:8:"category";s:5:"count";i:600;}s:4:"menu";a:3:{s:4:"name";s:4:"menu";s:4:"slug";s:4:"menu";s:5:"count";i:595;}s:5:"embed";a:3:{s:4:"name";s:5:"embed";s:4:"slug";s:5:"embed";s:5:"count";i:573;}s:10:"javascript";a:3:{s:4:"name";s:10:"javascript";s:4:"slug";s:10:"javascript";s:5:"count";i:550;}s:3:"css";a:3:{s:4:"name";s:3:"css";s:4:"slug";s:3:"css";s:5:"count";i:544;}s:4:"link";a:3:{s:4:"name";s:4:"link";s:4:"slug";s:4:"link";s:5:"count";i:543;}s:7:"youtube";a:3:{s:4:"name";s:7:"youtube";s:4:"slug";s:7:"youtube";s:5:"count";i:530;}s:5:"share";a:3:{s:4:"name";s:5:"share";s:4:"slug";s:5:"share";s:5:"count";i:523;}s:6:"editor";a:3:{s:4:"name";s:6:"editor";s:4:"slug";s:6:"editor";s:5:"count";i:513;}s:5:"theme";a:3:{s:4:"name";s:5:"theme";s:4:"slug";s:5:"theme";s:5:"count";i:513;}s:7:"comment";a:3:{s:4:"name";s:7:"comment";s:4:"slug";s:7:"comment";s:5:"count";i:513;}s:10:"responsive";a:3:{s:4:"name";s:10:"responsive";s:4:"slug";s:10:"responsive";s:5:"count";i:506;}s:9:"dashboard";a:3:{s:4:"name";s:9:"dashboard";s:4:"slug";s:9:"dashboard";s:5:"count";i:494;}s:6:"custom";a:3:{s:4:"name";s:6:"custom";s:4:"slug";s:6:"custom";s:5:"count";i:490;}s:12:"contact-form";a:3:{s:4:"name";s:12:"contact form";s:4:"slug";s:12:"contact-form";s:5:"count";i:490;}s:10:"categories";a:3:{s:4:"name";s:10:"categories";s:4:"slug";s:10:"categories";s:5:"count";i:484;}s:9:"affiliate";a:3:{s:4:"name";s:9:"affiliate";s:4:"slug";s:9:"affiliate";s:5:"count";i:480;}s:3:"ads";a:3:{s:4:"name";s:3:"ads";s:4:"slug";s:3:"ads";s:5:"count";i:479;}s:6:"button";a:3:{s:4:"name";s:6:"button";s:4:"slug";s:6:"button";s:5:"count";i:459;}s:4:"tags";a:3:{s:4:"name";s:4:"tags";s:4:"slug";s:4:"tags";s:5:"count";i:457;}s:4:"user";a:3:{s:4:"name";s:4:"user";s:4:"slug";s:4:"user";s:5:"count";i:452;}s:7:"contact";a:3:{s:4:"name";s:7:"contact";s:4:"slug";s:7:"contact";s:5:"count";i:441;}s:6:"mobile";a:3:{s:4:"name";s:6:"mobile";s:4:"slug";s:6:"mobile";s:5:"count";i:439;}s:3:"api";a:3:{s:4:"name";s:3:"api";s:4:"slug";s:3:"api";s:5:"count";i:436;}s:5:"photo";a:3:{s:4:"name";s:5:"photo";s:4:"slug";s:5:"photo";s:5:"count";i:422;}s:5:"users";a:3:{s:4:"name";s:5:"users";s:4:"slug";s:5:"users";s:5:"count";i:419;}s:5:"stats";a:3:{s:4:"name";s:5:"stats";s:4:"slug";s:5:"stats";s:5:"count";i:417;}s:6:"events";a:3:{s:4:"name";s:6:"events";s:4:"slug";s:6:"events";s:5:"count";i:416;}s:9:"slideshow";a:3:{s:4:"name";s:9:"slideshow";s:4:"slug";s:9:"slideshow";s:5:"count";i:414;}s:7:"payment";a:3:{s:4:"name";s:7:"payment";s:4:"slug";s:7:"payment";s:5:"count";i:414;}s:6:"photos";a:3:{s:4:"name";s:6:"photos";s:4:"slug";s:6:"photos";s:5:"count";i:408;}s:10:"navigation";a:3:{s:4:"name";s:10:"navigation";s:4:"slug";s:10:"navigation";s:5:"count";i:389;}s:10:"statistics";a:3:{s:4:"name";s:10:"statistics";s:4:"slug";s:10:"statistics";s:5:"count";i:388;}s:8:"calendar";a:3:{s:4:"name";s:8:"calendar";s:4:"slug";s:8:"calendar";s:5:"count";i:372;}s:15:"payment-gateway";a:3:{s:4:"name";s:15:"payment gateway";s:4:"slug";s:15:"payment-gateway";s:5:"count";i:371;}s:4:"news";a:3:{s:4:"name";s:4:"news";s:4:"slug";s:4:"news";s:5:"count";i:371;}s:10:"shortcodes";a:3:{s:4:"name";s:10:"shortcodes";s:4:"slug";s:10:"shortcodes";s:5:"count";i:366;}s:5:"popup";a:3:{s:4:"name";s:5:"popup";s:4:"slug";s:5:"popup";s:5:"count";i:362;}s:4:"chat";a:3:{s:4:"name";s:4:"chat";s:4:"slug";s:4:"chat";s:5:"count";i:358;}s:9:"marketing";a:3:{s:4:"name";s:9:"marketing";s:4:"slug";s:9:"marketing";s:5:"count";i:358;}s:12:"social-media";a:3:{s:4:"name";s:12:"social media";s:4:"slug";s:12:"social-media";s:5:"count";i:350;}s:7:"plugins";a:3:{s:4:"name";s:7:"plugins";s:4:"slug";s:7:"plugins";s:5:"count";i:348;}s:10:"newsletter";a:3:{s:4:"name";s:10:"newsletter";s:4:"slug";s:10:"newsletter";s:5:"count";i:346;}s:9:"multisite";a:3:{s:4:"name";s:9:"multisite";s:4:"slug";s:9:"multisite";s:5:"count";i:344;}s:4:"code";a:3:{s:4:"name";s:4:"code";s:4:"slug";s:4:"code";s:5:"count";i:344;}s:4:"meta";a:3:{s:4:"name";s:4:"meta";s:4:"slug";s:4:"meta";s:5:"count";i:339;}s:3:"url";a:3:{s:4:"name";s:3:"url";s:4:"slug";s:3:"url";s:5:"count";i:338;}s:4:"list";a:3:{s:4:"name";s:4:"list";s:4:"slug";s:4:"list";s:5:"count";i:334;}s:8:"redirect";a:3:{s:4:"name";s:8:"redirect";s:4:"slug";s:8:"redirect";s:5:"count";i:329;}s:5:"forms";a:3:{s:4:"name";s:5:"forms";s:4:"slug";s:5:"forms";s:5:"count";i:325;}s:11:"advertising";a:3:{s:4:"name";s:11:"advertising";s:4:"slug";s:11:"advertising";s:5:"count";i:312;}s:6:"simple";a:3:{s:4:"name";s:6:"simple";s:4:"slug";s:6:"simple";s:5:"count";i:309;}s:16:"custom-post-type";a:3:{s:4:"name";s:16:"custom post type";s:4:"slug";s:16:"custom-post-type";s:5:"count";i:307;}s:3:"tag";a:3:{s:4:"name";s:3:"tag";s:4:"slug";s:3:"tag";s:5:"count";i:303;}s:7:"adsense";a:3:{s:4:"name";s:7:"adsense";s:4:"slug";s:7:"adsense";s:5:"count";i:303;}s:11:"performance";a:3:{s:4:"name";s:11:"performance";s:4:"slug";s:11:"performance";s:5:"count";i:303;}s:12:"notification";a:3:{s:4:"name";s:12:"notification";s:4:"slug";s:12:"notification";s:5:"count";i:302;}s:4:"html";a:3:{s:4:"name";s:4:"html";s:4:"slug";s:4:"html";s:5:"count";i:301;}s:8:"tracking";a:3:{s:4:"name";s:8:"tracking";s:4:"slug";s:8:"tracking";s:5:"count";i:299;}s:16:"google-analytics";a:3:{s:4:"name";s:16:"google analytics";s:4:"slug";s:16:"google-analytics";s:5:"count";i:298;}s:6:"author";a:3:{s:4:"name";s:6:"author";s:4:"slug";s:6:"author";s:5:"count";i:296;}s:14:"contact-form-7";a:3:{s:4:"name";s:14:"contact form 7";s:4:"slug";s:14:"contact-form-7";s:5:"count";i:290;}}', 'no'),
+(262, '_site_transient_timeout_theme_roots', '1534727769', 'no'),
+(263, '_site_transient_theme_roots', 'a:5:{s:13:"twentyfifteen";s:7:"/themes";s:15:"twentyseventeen";s:7:"/themes";s:13:"twentysixteen";s:7:"/themes";s:26:"wp-bootstrap-starter-child";s:7:"/themes";s:20:"wp-bootstrap-starter";s:7:"/themes";}', 'no'),
+(264, 'installer_repositories_with_theme', 'a:1:{i:0;s:7:"toolset";}', 'yes'),
+(266, 'wordfence_version', '7.1.10', 'yes'),
+(267, 'wordfence_installed', '1', 'yes'),
+(268, 'wordfenceActivated', '1', 'yes'),
+(269, 'wf_plugin_act_error', '', 'yes'),
+(277, '_site_transient_update_plugins', 'O:8:"stdClass":5:{s:12:"last_checked";i:1534726078;s:7:"checked";a:6:{s:19:"akismet/akismet.php";s:5:"4.0.8";s:55:"custom-css-and-javascript/custom-css-and-javascript.php";s:5:"2.0.9";s:9:"hello.php";s:3:"1.7";s:14:"types/wpcf.php";s:5:"2.3.3";s:23:"wordfence/wordfence.php";s:6:"7.1.10";s:27:"wp-super-cache/wp-cache.php";s:5:"1.6.3";}s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:6:{s:19:"akismet/akismet.php";O:8:"stdClass":9:{s:2:"id";s:21:"w.org/plugins/akismet";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"4.0.8";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.4.0.8.zip";s:5:"icons";a:2:{s:2:"2x";s:59:"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272";s:2:"1x";s:59:"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272";}s:7:"banners";a:1:{s:2:"1x";s:61:"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904";}s:11:"banners_rtl";a:0:{}}s:55:"custom-css-and-javascript/custom-css-and-javascript.php";O:8:"stdClass":9:{s:2:"id";s:39:"w.org/plugins/custom-css-and-javascript";s:4:"slug";s:25:"custom-css-and-javascript";s:6:"plugin";s:55:"custom-css-and-javascript/custom-css-and-javascript.php";s:11:"new_version";s:5:"2.0.9";s:3:"url";s:56:"https://wordpress.org/plugins/custom-css-and-javascript/";s:7:"package";s:74:"https://downloads.wordpress.org/plugin/custom-css-and-javascript.2.0.9.zip";s:5:"icons";a:2:{s:2:"2x";s:78:"https://ps.w.org/custom-css-and-javascript/assets/icon-256x256.png?rev=1311319";s:2:"1x";s:78:"https://ps.w.org/custom-css-and-javascript/assets/icon-128x128.png?rev=1311319";}s:7:"banners";a:2:{s:2:"2x";s:81:"https://ps.w.org/custom-css-and-javascript/assets/banner-1544x500.png?rev=1333199";s:2:"1x";s:80:"https://ps.w.org/custom-css-and-javascript/assets/banner-772x250.png?rev=1333199";}s:11:"banners_rtl";a:0:{}}s:9:"hello.php";O:8:"stdClass":9:{s:2:"id";s:25:"w.org/plugins/hello-dolly";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";s:5:"icons";a:2:{s:2:"2x";s:63:"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907";s:2:"1x";s:63:"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907";}s:7:"banners";a:1:{s:2:"1x";s:65:"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342";}s:11:"banners_rtl";a:0:{}}s:14:"types/wpcf.php";O:8:"stdClass":9:{s:2:"id";s:19:"w.org/plugins/types";s:4:"slug";s:5:"types";s:6:"plugin";s:14:"types/wpcf.php";s:11:"new_version";s:5:"2.3.3";s:3:"url";s:36:"https://wordpress.org/plugins/types/";s:7:"package";s:54:"https://downloads.wordpress.org/plugin/types.2.3.3.zip";s:5:"icons";a:3:{s:2:"2x";s:58:"https://ps.w.org/types/assets/icon-256x256.png?rev=1625832";s:2:"1x";s:50:"https://ps.w.org/types/assets/icon.svg?rev=1009056";s:3:"svg";s:50:"https://ps.w.org/types/assets/icon.svg?rev=1009056";}s:7:"banners";a:2:{s:2:"2x";s:61:"https://ps.w.org/types/assets/banner-1544x500.png?rev=1681816";s:2:"1x";s:60:"https://ps.w.org/types/assets/banner-772x250.png?rev=1681816";}s:11:"banners_rtl";a:0:{}}s:23:"wordfence/wordfence.php";O:8:"stdClass":9:{s:2:"id";s:23:"w.org/plugins/wordfence";s:4:"slug";s:9:"wordfence";s:6:"plugin";s:23:"wordfence/wordfence.php";s:11:"new_version";s:6:"7.1.10";s:3:"url";s:40:"https://wordpress.org/plugins/wordfence/";s:7:"package";s:59:"https://downloads.wordpress.org/plugin/wordfence.7.1.10.zip";s:5:"icons";a:2:{s:2:"2x";s:62:"https://ps.w.org/wordfence/assets/icon-256x256.png?rev=1457724";s:2:"1x";s:62:"https://ps.w.org/wordfence/assets/icon-128x128.png?rev=1457724";}s:7:"banners";a:2:{s:2:"2x";s:65:"https://ps.w.org/wordfence/assets/banner-1544x500.png?rev=1808795";s:2:"1x";s:64:"https://ps.w.org/wordfence/assets/banner-772x250.png?rev=1808795";}s:11:"banners_rtl";a:0:{}}s:27:"wp-super-cache/wp-cache.php";O:8:"stdClass":9:{s:2:"id";s:28:"w.org/plugins/wp-super-cache";s:4:"slug";s:14:"wp-super-cache";s:6:"plugin";s:27:"wp-super-cache/wp-cache.php";s:11:"new_version";s:5:"1.6.3";s:3:"url";s:45:"https://wordpress.org/plugins/wp-super-cache/";s:7:"package";s:63:"https://downloads.wordpress.org/plugin/wp-super-cache.1.6.3.zip";s:5:"icons";a:2:{s:2:"2x";s:67:"https://ps.w.org/wp-super-cache/assets/icon-256x256.png?rev=1095422";s:2:"1x";s:67:"https://ps.w.org/wp-super-cache/assets/icon-128x128.png?rev=1095422";}s:7:"banners";a:2:{s:2:"2x";s:70:"https://ps.w.org/wp-super-cache/assets/banner-1544x500.png?rev=1082414";s:2:"1x";s:69:"https://ps.w.org/wp-super-cache/assets/banner-772x250.png?rev=1082414";}s:11:"banners_rtl";a:0:{}}}}', 'no'),
+(278, 'ossdl_off_cdn_url', 'http://localhost/existaya-test', 'yes'),
+(279, 'ossdl_off_blog_url', 'http://localhost/existaya-test', 'yes'),
+(280, 'ossdl_off_include_dirs', 'wp-content,wp-includes', 'yes'),
+(281, 'ossdl_off_exclude', '.php', 'yes'),
+(282, 'ossdl_cname', '', 'yes'),
+(283, 'wp_super_cache_index_detected', '1', 'no'),
+(286, '_transient_is_multi_author', '0', 'yes');
 
 -- --------------------------------------------------------
 
@@ -551,7 +562,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (270, 101, '_wp_types_group_templates', ',,,,,,,'),
 (271, 101, '_wp_types_group_terms', 'all'),
 (272, 102, '_edit_last', '1'),
-(273, 102, '_edit_lock', '1534720169:1'),
+(273, 102, '_edit_lock', '1534726304:1'),
 (274, 103, '_wp_attached_file', '2018/08/1.png'),
 (275, 103, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:2000;s:6:"height";i:700;s:4:"file";s:13:"2018/08/1.png";s:5:"sizes";a:4:{s:9:"thumbnail";a:4:{s:4:"file";s:13:"1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:13:"1-300x105.png";s:5:"width";i:300;s:6:"height";i:105;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:13:"1-768x269.png";s:5:"width";i:768;s:6:"height";i:269;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:14:"1-1024x358.png";s:5:"width";i:1024;s:6:"height";i:358;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
 (276, 104, '_wp_attached_file', '2018/08/2.png'),
@@ -589,18 +600,18 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (308, 114, '_wp_attachment_metadata', 'a:5:{s:5:"width";i:826;s:6:"height";i:476;s:4:"file";s:15:"2018/08/fff.png";s:5:"sizes";a:3:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"fff-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:6:"medium";a:4:{s:4:"file";s:15:"fff-300x173.png";s:5:"width";i:300;s:6:"height";i:173;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:15:"fff-768x443.png";s:5:"width";i:768;s:6:"height";i:443;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}'),
 (309, 113, '_edit_last', '1'),
 (310, 113, '_edit_lock', '1534720154:1'),
-(311, 101, '_toolset_edit_last', '1534720287'),
+(311, 101, '_toolset_edit_last', '1534726363'),
 (312, 101, '_wp_types_group_filters_association', 'any'),
 (313, 113, '_wp_trash_meta_status', 'draft'),
 (314, 113, '_wp_trash_meta_time', '1534720301'),
 (315, 113, '_wp_desired_post_slug', ''),
 (316, 117, '_wp_types_group_fields', ',image,line-1,line-2,application,from,to,'),
-(317, 117, '_wp_types_group_post_types', ',,'),
+(317, 117, '_wp_types_group_post_types', ',,item,'),
 (318, 117, '_wp_types_group_templates', ',,,,,,,'),
 (319, 117, '_wp_types_group_terms', 'all'),
 (320, 118, '_edit_last', '1'),
-(321, 118, '_edit_lock', '1534720623:1'),
-(328, 117, '_toolset_edit_last', '1534720684'),
+(321, 118, '_edit_lock', '1534726272:1'),
+(328, 117, '_toolset_edit_last', '1534726345'),
 (329, 117, '_wp_types_group_filters_association', 'any'),
 (330, 118, 'wpcf-image', 'http://localhost/existaya-test/wp-content/uploads/2018/08/fff.png'),
 (331, 118, 'wpcf-line-1', 'La literatura une a todos los géneros'),
@@ -771,7 +782,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (98, 1, '2018-08-19 21:55:38', '2018-08-19 21:55:38', 'var $ = window.jQuery;\n$(document).ready( function() {\n  $(''#slider'').slick({\n	  dots: true,\n	  infinite: false,\n	  speed: 300,\n	  slidesToShow: 1,\n	  slidesToScroll: 1,\n	  autoplay: true,\n	  autoplaySpeed: 2000,\n	});\n});', '', '', 'draft', 'closed', 'closed', '', '98', '', '', '2018-08-19 21:58:30', '2018-08-19 21:58:30', '', 0, 'http://localhost/existaya-test/?post_type=hm_custom_javascript&#038;p=98', 0, 'hm_custom_javascript', '', 0),
 (99, 1, '2018-08-19 21:58:30', '2018-08-19 21:58:30', 'var $ = window.jQuery;\n$(document).ready( function() {\n	setTimeout( function() {\n		$(''#slider'').slick({\n			dots: true,\n			infinite: false,\n			speed: 300,\n			slidesToShow: 1,\n			slidesToScroll: 1,\n			autoplay: true,\n			autoplaySpeed: 2000,\n		});\n	}, 1000);\n});', '', '', 'draft', 'closed', 'closed', '', '99', '', '', '2018-08-19 21:58:48', '2018-08-19 21:58:48', '', 0, 'http://localhost/existaya-test/?post_type=hm_custom_javascript&#038;p=99', 0, 'hm_custom_javascript', '', 0),
 (100, 1, '2018-08-19 21:58:48', '2018-08-19 21:58:48', 'var $ = window.jQuery;\n$(document).ready( function() {\n	$(''#slider'').slick({\n		dots: true,\n		infinite: false,\n		speed: 300,\n		slidesToShow: 1,\n		slidesToScroll: 1,\n		autoplay: true,\n		autoplaySpeed: 2000,\n	});\n});', '', '', 'draft', 'closed', 'closed', '', '100', '', '', '2018-08-20 00:00:00', '2018-08-20 00:00:00', '', 0, 'http://localhost/existaya-test/?post_type=hm_custom_javascript&#038;p=100', 0, 'hm_custom_javascript', '', 0),
-(101, 1, '2018-08-19 22:35:39', '2018-08-19 22:35:39', '', 'Slider Images', '', 'publish', 'closed', 'closed', '', 'slider-images', '', '', '2018-08-19 23:11:27', '2018-08-19 23:11:27', '', 0, 'http://localhost/existaya-test/wp-types-group/slider-images/', 0, 'wp-types-group', '', 0),
+(101, 1, '2018-08-19 22:35:39', '2018-08-19 22:35:39', '', 'Slider Images', '', 'publish', 'closed', 'closed', '', 'slider-images', '', '', '2018-08-20 00:52:43', '2018-08-20 00:52:43', '', 0, 'http://localhost/existaya-test/wp-types-group/slider-images/', 0, 'wp-types-group', '', 0),
 (102, 1, '2018-08-19 22:38:48', '2018-08-19 22:38:48', '', 'Promociones', '', 'publish', 'closed', 'closed', '', 'promociones', '', '', '2018-08-19 22:38:48', '2018-08-19 22:38:48', '', 0, 'http://localhost/existaya-test/?post_type=slider&#038;p=102', 0, 'slider', '', 0),
 (103, 1, '2018-08-19 22:37:58', '2018-08-19 22:37:58', '', '1', '', 'inherit', 'open', 'closed', '', '1', '', '', '2018-08-19 22:37:58', '2018-08-19 22:37:58', '', 102, 'http://localhost/existaya-test/wp-content/uploads/2018/08/1.png', 0, 'attachment', 'image/png', 0),
 (104, 1, '2018-08-19 22:37:58', '2018-08-19 22:37:58', '', '2', '', 'inherit', 'open', 'closed', '', '2', '', '', '2018-08-19 22:37:58', '2018-08-19 22:37:58', '', 102, 'http://localhost/existaya-test/wp-content/uploads/2018/08/2.png', 0, 'attachment', 'image/png', 0),
@@ -787,7 +798,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (114, 1, '2018-08-19 23:08:27', '2018-08-19 23:08:27', '', 'fff', '', 'inherit', 'open', 'closed', '', 'fff', '', '', '2018-08-19 23:08:27', '2018-08-19 23:08:27', '', 113, 'http://localhost/existaya-test/wp-content/uploads/2018/08/fff.png', 0, 'attachment', 'image/png', 0),
 (115, 1, '2018-08-19 23:11:30', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2018-08-19 23:11:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/existaya-test/?p=115', 0, 'post', '', 0),
 (116, 1, '2018-08-19 23:11:41', '2018-08-19 23:11:41', '', 'Promo 1', '', 'inherit', 'closed', 'closed', '', '113-revision-v1', '', '', '2018-08-19 23:11:41', '2018-08-19 23:11:41', '', 113, 'http://localhost/existaya-test/2018/08/19/113-revision-v1/', 0, 'revision', '', 0),
-(117, 1, '2018-08-19 23:15:43', '2018-08-19 23:15:43', '', 'Items Data', '', 'publish', 'closed', 'closed', '', 'items-data', '', '', '2018-08-19 23:18:04', '2018-08-19 23:18:04', '', 0, 'http://localhost/existaya-test/wp-types-group/items-data/', 0, 'wp-types-group', '', 0),
+(117, 1, '2018-08-19 23:15:43', '2018-08-19 23:15:43', '', 'Items Data', '', 'publish', 'closed', 'closed', '', 'items-data', '', '', '2018-08-20 00:52:25', '2018-08-20 00:52:25', '', 0, 'http://localhost/existaya-test/wp-types-group/items-data/', 0, 'wp-types-group', '', 0),
 (118, 1, '2018-08-19 23:17:52', '2018-08-19 23:17:52', '', 'Promo 1', '', 'publish', 'closed', 'closed', '', 'promo-1', '', '', '2018-08-19 23:18:20', '2018-08-19 23:18:20', '', 0, 'http://localhost/existaya-test/?post_type=item&#038;p=118', 0, 'item', '', 0),
 (119, 1, '2018-08-19 23:20:02', '2018-08-19 23:20:02', '', 'Promo 2', '', 'publish', 'closed', 'closed', '', 'promo-2', '', '', '2018-08-19 23:23:30', '2018-08-19 23:23:30', '', 0, 'http://localhost/existaya-test/?post_type=item&#038;p=119', 0, 'item', '', 0),
 (120, 1, '2018-08-19 23:20:59', '2018-08-19 23:20:59', '', 'Promo 3', '', 'publish', 'closed', 'closed', '', 'promo-3', '', '', '2018-08-19 23:23:41', '2018-08-19 23:23:41', '', 0, 'http://localhost/existaya-test/?post_type=item&#038;p=120', 0, 'item', '', 0),
@@ -929,7 +940,7 @@ CREATE TABLE IF NOT EXISTS `wp_usermeta` (
   `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
 -- Volcado de datos para la tabla `wp_usermeta`
@@ -963,7 +974,8 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (26, 1, 'metaboxhidden_post', 'a:6:{i:0;s:11:"postexcerpt";i:1;s:13:"trackbacksdiv";i:2;s:10:"postcustom";i:3;s:16:"commentstatusdiv";i:4;s:7:"slugdiv";i:5;s:9:"authordiv";}'),
 (27, 1, 'closedpostboxes_toolset_page_wpcf-edit', 'a:5:{i:0;s:24:"types-custom-field-image";i:1;s:25:"types-custom-field-line-1";i:2;s:25:"types-custom-field-line-2";i:3;s:30:"types-custom-field-application";i:4;s:23:"types-custom-field-from";}'),
 (28, 1, 'metaboxhidden_toolset_page_wpcf-edit', 'a:0:{}'),
-(29, 1, 'session_tokens', 'a:1:{s:64:"c8bcabb877dd4c23cd46394e86abfa13c9b11f0490bcb7af1b57758eaf9bbd0e";a:4:{s:10:"expiration";i:1534895870;s:2:"ip";s:3:"::1";s:2:"ua";s:115:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";s:5:"login";i:1534723070;}}');
+(32, 1, 'closedpostboxes_slider', 'a:0:{}'),
+(33, 1, 'metaboxhidden_slider', 'a:2:{i:0;s:24:"wpcf-group-slider-images";i:1;s:7:"slugdiv";}');
 
 -- --------------------------------------------------------
 
@@ -990,6 +1002,630 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1, 'gcivico', '$P$BCBhwoRs/nXCzBH16cdYu972UVPAVg1', 'gcivico', 'gcrlink@gmail.com', '', '2018-08-19 13:09:53', '', 0, 'gcivico');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfBadLeechers`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfBadLeechers` (
+  `eMin` int(10) unsigned NOT NULL,
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `hits` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfBlockedCommentLog`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfBlockedCommentLog` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `countryCode` varchar(2) NOT NULL,
+  `blockCount` int(10) unsigned NOT NULL DEFAULT '0',
+  `unixday` int(10) unsigned NOT NULL,
+  `blockType` varchar(50) NOT NULL DEFAULT 'gsb'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfBlockedIPLog`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfBlockedIPLog` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `countryCode` varchar(2) NOT NULL,
+  `blockCount` int(10) unsigned NOT NULL DEFAULT '0',
+  `unixday` int(10) unsigned NOT NULL,
+  `blockType` varchar(50) NOT NULL DEFAULT 'generic'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfBlocks7`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfBlocks7` (
+  `id` bigint(20) unsigned NOT NULL,
+  `type` int(10) unsigned NOT NULL DEFAULT '0',
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `blockedTime` bigint(20) NOT NULL,
+  `reason` varchar(255) NOT NULL,
+  `lastAttempt` int(10) unsigned DEFAULT '0',
+  `blockedHits` int(10) unsigned DEFAULT '0',
+  `expiration` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `parameters` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfConfig`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfConfig` (
+  `name` varchar(100) NOT NULL,
+  `val` longblob,
+  `autoload` enum('no','yes') NOT NULL DEFAULT 'yes'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `wp_wfConfig`
+--
+
+INSERT INTO `wp_wfConfig` (`name`, `val`, `autoload`) VALUES
+('activatingIP', 0x3a3a31, 'yes'),
+('actUpdateInterval', 0x32, 'yes'),
+('addCacheComment', 0x30, 'yes'),
+('adminNoticeQueue', 0x613a303a7b7d, 'yes'),
+('advancedCommentScanning', 0x31, 'yes'),
+('ajaxWatcherDisabled_admin', 0x30, 'yes'),
+('ajaxWatcherDisabled_front', 0x30, 'yes'),
+('alertEmails', 0x6763726c696e6b40676d61696c2e636f6d, 'yes'),
+('alertOn_adminLogin', 0x31, 'yes'),
+('alertOn_block', 0x31, 'yes'),
+('alertOn_breachLogin', 0x31, 'yes'),
+('alertOn_critical', 0x31, 'yes'),
+('alertOn_firstAdminLoginOnly', 0x30, 'yes'),
+('alertOn_firstNonAdminLoginOnly', 0x30, 'yes'),
+('alertOn_loginLockout', 0x31, 'yes'),
+('alertOn_lostPasswdForm', 0x31, 'yes'),
+('alertOn_nonAdminLogin', 0x30, 'yes'),
+('alertOn_throttle', 0x30, 'yes'),
+('alertOn_update', 0x30, 'yes'),
+('alertOn_warnings', 0x31, 'yes'),
+('alertOn_wordfenceDeactivated', 0x31, 'yes'),
+('alert_maxHourly', 0x30, 'yes'),
+('allowed404s', 0x2f66617669636f6e2e69636f0a2f6170706c652d746f7563682d69636f6e2a2e706e670a2f2a4032782e706e670a2f62726f77736572636f6e6669672e786d6c, 'yes'),
+('allowed404s6116Migration', 0x31, 'yes'),
+('allowHTTPSCaching', 0x30, 'yes'),
+('allowMySQLi', 0x31, 'yes'),
+('allScansScheduled', 0x613a333a7b693a303b613a323a7b733a393a2274696d657374616d70223b693a313533343832313030303b733a343a2261726773223b613a313a7b693a303b693a313533343832313030303b7d7d693a313b613a323a7b733a393a2274696d657374616d70223b693a313533353038303230303b733a343a2261726773223b613a313a7b693a303b693a313533353038303230303b7d7d693a323b613a323a7b733a393a2274696d657374616d70223b693a313533353333393430303b733a343a2261726773223b613a313a7b693a303b693a313533353333393430303b7d7d7d, 'yes'),
+('apiKey', 0x30623066633763393432343934356161313039386365373165353231626432323036306634303238303961386563346132636434643734336238346534336635643738366462653734346431663538336235323261333138303337323430396336326664393334393535663834386265333338656364386361393864363266313865303961363936623336323361353662616130653538343231656362643930, 'yes'),
+('autoBlockScanners', 0x31, 'yes'),
+('autoUpdate', 0x30, 'yes'),
+('autoUpdateAttempts', 0x30, 'yes'),
+('bannedURLs', '', 'yes'),
+('betaThreatDefenseFeed', 0x30, 'yes'),
+('blockedTime', 0x333030, 'yes'),
+('blockFakeBots', 0x30, 'yes'),
+('blocks702Migration', 0x31, 'yes'),
+('cacheType', 0x64697361626c6564, 'yes'),
+('cbl_action', 0x626c6f636b, 'yes'),
+('cbl_bypassRedirDest', '', 'yes'),
+('cbl_bypassRedirURL', '', 'yes'),
+('cbl_bypassViewURL', '', 'yes'),
+('cbl_cookieVal', 0x35623761306637363865306466, 'yes'),
+('cbl_loggedInBlocked', '', 'yes'),
+('cbl_redirURL', '', 'yes'),
+('cbl_restOfSiteBlocked', 0x31, 'yes'),
+('checkSpamIP', 0x31, 'yes'),
+('config701Migration', 0x31, 'yes'),
+('currentCronKey', '', 'yes'),
+('dashboardData', 0x613a343a7b733a393a2267656e657261746564223b693a313533343732353038333b733a333a22746466223b613a333a7b733a393a22636f6d6d756e697479223b693a353636383b733a373a227072656d69756d223b693a353636393b733a393a22626c61636b6c697374223b693a323939363b7d733a31303a2261747461636b64617461223b613a333a7b733a333a22323468223b613a32343a7b693a303b613a323a7b733a313a2274223b693a313533343633363830303b733a313a2263223b693a323638343431343b7d693a313b613a323a7b733a313a2274223b693a313533343634303430303b733a313a2263223b693a323636353230333b7d693a323b613a323a7b733a313a2274223b693a313533343634343030303b733a313a2263223b693a323730313335343b7d693a333b613a323a7b733a313a2274223b693a313533343634373630303b733a313a2263223b693a323736343639353b7d693a343b613a323a7b733a313a2274223b693a313533343635313230303b733a313a2263223b693a323735333137363b7d693a353b613a323a7b733a313a2274223b693a313533343635343830303b733a313a2263223b693a323930373838303b7d693a363b613a323a7b733a313a2274223b693a313533343635383430303b733a313a2263223b693a323935333530363b7d693a373b613a323a7b733a313a2274223b693a313533343636323030303b733a313a2263223b693a323930303638353b7d693a383b613a323a7b733a313a2274223b693a313533343636353630303b733a313a2263223b693a323837333331333b7d693a393b613a323a7b733a313a2274223b693a313533343636393230303b733a313a2263223b693a323932383636323b7d693a31303b613a323a7b733a313a2274223b693a313533343637323830303b733a313a2263223b693a323837323632323b7d693a31313b613a323a7b733a313a2274223b693a313533343637363430303b733a313a2263223b693a323736343938333b7d693a31323b613a323a7b733a313a2274223b693a313533343638303030303b733a313a2263223b693a323733383337303b7d693a31333b613a323a7b733a313a2274223b693a313533343638333630303b733a313a2263223b693a323739363631393b7d693a31343b613a323a7b733a313a2274223b693a313533343638373230303b733a313a2263223b693a323836313035363b7d693a31353b613a323a7b733a313a2274223b693a313533343639303830303b733a313a2263223b693a323836363136303b7d693a31363b613a323a7b733a313a2274223b693a313533343639343430303b733a313a2263223b693a323932323232323b7d693a31373b613a323a7b733a313a2274223b693a313533343639383030303b733a313a2263223b693a323832383835323b7d693a31383b613a323a7b733a313a2274223b693a313533343730313630303b733a313a2263223b693a323930363034373b7d693a31393b613a323a7b733a313a2274223b693a313533343730353230303b733a313a2263223b693a323934363831323b7d693a32303b613a323a7b733a313a2274223b693a313533343730383830303b733a313a2263223b693a323637373936343b7d693a32313b613a323a7b733a313a2274223b693a313533343731323430303b733a313a2263223b693a323738373934383b7d693a32323b613a323a7b733a313a2274223b693a313533343731363030303b733a313a2263223b693a323832353833333b7d693a32333b613a323a7b733a313a2274223b693a313533343731393630303b733a313a2263223b693a323832393130333b7d7d733a323a223764223b613a373a7b693a303b613a323a7b733a313a2274223b693a313533343131383430303b733a313a2263223b693a37393730333836353b7d693a313b613a323a7b733a313a2274223b693a313533343230343830303b733a313a2263223b693a37383030303838333b7d693a323b613a323a7b733a313a2274223b693a313533343239313230303b733a313a2263223b693a37383131353034373b7d693a333b613a323a7b733a313a2274223b693a313533343337373630303b733a313a2263223b693a37333033343932393b7d693a343b613a323a7b733a313a2274223b693a313533343436343030303b733a313a2263223b693a37303033393736333b7d693a353b613a323a7b733a313a2274223b693a313533343535303430303b733a313a2263223b693a36383037323739343b7d693a363b613a323a7b733a313a2274223b693a313533343633363830303b733a313a2263223b693a36373735373436363b7d7d733a333a22333064223b613a33303a7b693a303b613a323a7b733a313a2274223b693a313533323133313230303b733a313a2263223b693a37353737393633363b7d693a313b613a323a7b733a313a2274223b693a313533323231373630303b733a313a2263223b693a37373031393830383b7d693a323b613a323a7b733a313a2274223b693a313533323330343030303b733a313a2263223b693a37333230363436393b7d693a333b613a323a7b733a313a2274223b693a313533323339303430303b733a313a2263223b693a36353839343039353b7d693a343b613a323a7b733a313a2274223b693a313533323437363830303b733a313a2263223b693a36373136383438303b7d693a353b613a323a7b733a313a2274223b693a313533323536333230303b733a313a2263223b693a37313036383430333b7d693a363b613a323a7b733a313a2274223b693a313533323634393630303b733a313a2263223b693a37313838333931333b7d693a373b613a323a7b733a313a2274223b693a313533323733363030303b733a313a2263223b693a36383838333630393b7d693a383b613a323a7b733a313a2274223b693a313533323832323430303b733a313a2263223b693a37303931303435343b7d693a393b613a323a7b733a313a2274223b693a313533323930383830303b733a313a2263223b693a37353638313239323b7d693a31303b613a323a7b733a313a2274223b693a313533323939353230303b733a313a2263223b693a37323534353938333b7d693a31313b613a323a7b733a313a2274223b693a313533333038313630303b733a313a2263223b693a36393937363435353b7d693a31323b613a323a7b733a313a2274223b693a313533333136383030303b733a313a2263223b693a37303833373733333b7d693a31333b613a323a7b733a313a2274223b693a313533333235343430303b733a313a2263223b693a36393136383735323b7d693a31343b613a323a7b733a313a2274223b693a313533333334303830303b733a313a2263223b693a36373130363634383b7d693a31353b613a323a7b733a313a2274223b693a313533333432373230303b733a313a2263223b693a36363136343330353b7d693a31363b613a323a7b733a313a2274223b693a313533333531333630303b733a313a2263223b693a36373430323235343b7d693a31373b613a323a7b733a313a2274223b693a313533333630303030303b733a313a2263223b693a36383530323736353b7d693a31383b613a323a7b733a313a2274223b693a313533333638363430303b733a313a2263223b693a37333237343631313b7d693a31393b613a323a7b733a313a2274223b693a313533333737323830303b733a313a2263223b693a37363238323935373b7d693a32303b613a323a7b733a313a2274223b693a313533333835393230303b733a313a2263223b693a37323230303032353b7d693a32313b613a323a7b733a313a2274223b693a313533333934353630303b733a313a2263223b693a37323330373738303b7d693a32323b613a323a7b733a313a2274223b693a313533343033323030303b733a313a2263223b693a37363435313639353b7d693a32333b613a323a7b733a313a2274223b693a313533343131383430303b733a313a2263223b693a37393730333836353b7d693a32343b613a323a7b733a313a2274223b693a313533343230343830303b733a313a2263223b693a37383030303838333b7d693a32353b613a323a7b733a313a2274223b693a313533343239313230303b733a313a2263223b693a37383131353034373b7d693a32363b613a323a7b733a313a2274223b693a313533343337373630303b733a313a2263223b693a37333033343932393b7d693a32373b613a323a7b733a313a2274223b693a313533343436343030303b733a313a2263223b693a37303033393736333b7d693a32383b613a323a7b733a313a2274223b693a313533343535303430303b733a313a2263223b693a36383037323739343b7d693a32393b613a323a7b733a313a2274223b693a313533343633363830303b733a313a2263223b693a36373735373436363b7d7d7d733a393a22636f756e7472696573223b613a313a7b733a323a223764223b613a31303a7b693a303b613a323a7b733a323a226364223b733a323a225553223b733a323a226374223b693a38383036373037383b7d693a313b613a323a7b733a323a226364223b733a323a22434e223b733a323a226374223b693a37333038333830393b7d693a323b613a323a7b733a323a226364223b733a323a225541223b733a323a226374223b693a36353739383932333b7d693a333b613a323a7b733a323a226364223b733a323a224945223b733a323a226374223b693a35373135363734323b7d693a343b613a323a7b733a323a226364223b733a323a225255223b733a323a226374223b693a35303432323131333b7d693a353b613a323a7b733a323a226364223b733a323a225452223b733a323a226374223b693a33343531393639313b7d693a363b613a323a7b733a323a226364223b733a323a224652223b733a323a226374223b693a32313439393232373b7d693a373b613a323a7b733a323a226364223b733a323a22504c223b733a323a226374223b693a32313037333738373b7d693a383b613a323a7b733a323a226364223b733a323a224445223b733a323a226374223b693a31373439393039393b7d693a393b613a323a7b733a323a226364223b733a323a224252223b733a323a226374223b693a31363334373536393b7d7d7d7d, 'yes'),
+('dbTest', 0x613a313a7b733a353a226e6f6e6365223b733a36343a2265653937366438643662316638643433353136656134346539626464666564323765393336303961383430623034666266383530666338386164336533643064223b7d, 'no'),
+('dbVersion', 0x352e362e3337, 'yes'),
+('debugOn', 0x30, 'yes'),
+('deleteTablesOnDeact', 0x30, 'yes'),
+('detectProxyNextCheck', 0x31353335333330383035, 'no'),
+('detectProxyNonce', 0x30363435396635333465663066363364646262373865383165633461666363366266663039386536616339343535623736356630366131356634663434353765, 'no'),
+('detectProxyRecommendation', '', 'no'),
+('disableCodeExecutionUploads', 0x30, 'yes'),
+('disableConfigCaching', 0x30, 'yes'),
+('disableCookies', 0x30, 'yes'),
+('disableWAFIPBlocking', 0x30, 'yes'),
+('dismissAutoPrependNotice', 0x30, 'yes'),
+('displayAutomaticBlocks', 0x31, 'yes'),
+('displayTopLevelBlocking', 0x30, 'yes'),
+('displayTopLevelLiveTraffic', 0x30, 'yes'),
+('displayTopLevelOptions', 0x31, 'yes'),
+('email_summary_dashboard_widget_enabled', 0x31, 'yes'),
+('email_summary_enabled', 0x31, 'yes'),
+('email_summary_excluded_directories', 0x77702d636f6e74656e742f63616368652c77702d636f6e74656e742f77666c6f6773, 'yes'),
+('email_summary_interval', 0x7765656b6c79, 'yes'),
+('encKey', 0x63646362666164653165636462616135, 'yes'),
+('fileContentsGSB6315Migration', 0x31, 'yes'),
+('firewallEnabled', 0x31, 'yes'),
+('geoIPVersionHash', 0x66343639356135643564653831353830383536376161613230373432383333663433363136393566636538323838623362633932306561666235653261616166, 'yes'),
+('howGetIPs', '', 'yes'),
+('howGetIPs_trusted_proxies', '', 'yes'),
+('isPaid', '', 'yes'),
+('keyType', 0x66726565, 'yes'),
+('lastBlockAggregation', 0x31353334373236303034, 'yes'),
+('lastDailyCron', 0x31353334373236303138, 'yes'),
+('lastDashboardCheck', 0x31353334373236303138, 'yes'),
+('lastScanCompleted', 0x6f6b, 'yes'),
+('lastScanFailureType', '', 'yes'),
+('liveActivityPauseEnabled', 0x31, 'yes'),
+('liveTrafficEnabled', 0x31, 'yes'),
+('liveTraf_displayExpandedRecords', 0x30, 'no'),
+('liveTraf_ignoreIPs', '', 'yes'),
+('liveTraf_ignorePublishers', 0x31, 'yes'),
+('liveTraf_ignoreUA', '', 'yes'),
+('liveTraf_ignoreUsers', '', 'yes'),
+('liveTraf_maxAge', 0x3330, 'yes'),
+('liveTraf_maxRows', 0x32303030, 'yes'),
+('loginSecurityEnabled', 0x31, 'yes'),
+('loginSec_blockAdminReg', 0x31, 'yes'),
+('loginSec_breachPasswds', 0x61646d696e73, 'yes'),
+('loginSec_breachPasswds_enabled', 0x31, 'yes'),
+('loginSec_countFailMins', 0x323430, 'yes'),
+('loginSec_disableAuthorScan', 0x31, 'yes'),
+('loginSec_disableOEmbedAuthor', 0x30, 'yes'),
+('loginSec_enableSeparateTwoFactor', '', 'yes'),
+('loginSec_lockInvalidUsers', 0x30, 'yes'),
+('loginSec_lockoutMins', 0x323430, 'yes'),
+('loginSec_maskLoginErrors', 0x31, 'yes'),
+('loginSec_maxFailures', 0x3230, 'yes'),
+('loginSec_maxForgotPasswd', 0x3230, 'yes'),
+('loginSec_requireAdminTwoFactor', 0x30, 'yes'),
+('loginSec_strongPasswds', 0x70756273, 'yes'),
+('loginSec_strongPasswds_enabled', 0x31, 'yes'),
+('loginSec_userBlacklist', '', 'yes'),
+('longEncKey', 0x33613430646363303430663265393930656661333535623732386366303964306463666365656637303939356339326237343365626164313930646333326663, 'yes'),
+('lowResourceScansEnabled', 0x30, 'yes'),
+('lowResourceScanWaitStep', '', 'yes'),
+('manualScanType', 0x6f6e63654461696c79, 'yes'),
+('max404Crawlers', 0x44495341424c4544, 'yes'),
+('max404Crawlers_action', 0x7468726f74746c65, 'yes'),
+('max404Humans', 0x44495341424c4544, 'yes'),
+('max404Humans_action', 0x7468726f74746c65, 'yes'),
+('maxExecutionTime', 0x30, 'yes'),
+('maxGlobalRequests', 0x44495341424c4544, 'yes'),
+('maxGlobalRequests_action', 0x7468726f74746c65, 'yes'),
+('maxMem', 0x323536, 'yes'),
+('maxRequestsCrawlers', 0x44495341424c4544, 'yes'),
+('maxRequestsCrawlers_action', 0x7468726f74746c65, 'yes'),
+('maxRequestsHumans', 0x44495341424c4544, 'yes'),
+('maxRequestsHumans_action', 0x7468726f74746c65, 'yes'),
+('maxScanHits', 0x44495341424c4544, 'yes'),
+('maxScanHits_action', 0x7468726f74746c65, 'yes'),
+('migration636_email_summary_excluded_directories', 0x31, 'no'),
+('needsNewTour_blocking', 0x31, 'yes'),
+('needsNewTour_dashboard', 0x31, 'yes'),
+('needsNewTour_firewall', 0x31, 'yes'),
+('needsNewTour_livetraffic', 0x31, 'yes'),
+('needsNewTour_scan', 0x31, 'yes'),
+('needsUpgradeTour_blocking', 0x30, 'yes'),
+('needsUpgradeTour_dashboard', 0x30, 'yes'),
+('needsUpgradeTour_firewall', 0x30, 'yes'),
+('needsUpgradeTour_livetraffic', 0x30, 'yes'),
+('needsUpgradeTour_scan', 0x30, 'yes'),
+('neverBlockBG', 0x6e65766572426c6f636b5665726966696564, 'yes'),
+('noc1ScanSchedule', 0x613a333a7b693a303b693a313533343832313030303b693a313b693a313533353038303230303b693a323b693a313533353333393430303b7d, 'yes'),
+('notification_blogHighlights', 0x31, 'yes'),
+('notification_productUpdates', 0x31, 'yes'),
+('notification_promotions', 0x31, 'yes'),
+('notification_scanStatus', 0x31, 'yes'),
+('notification_securityAlerts', 0x31, 'yes'),
+('notification_updatesNeeded', 0x31, 'yes'),
+('onboardingAttempt1', 0x6c6963656e7365, 'yes'),
+('onboardingAttempt2', '', 'no'),
+('onboardingAttempt3', '', 'no'),
+('onboardingAttempt3Initial', 0x30, 'yes'),
+('other_blockBadPOST', 0x30, 'yes'),
+('other_bypassLitespeedNoabort', 0x30, 'yes'),
+('other_hideWPVersion', 0x30, 'yes'),
+('other_noAnonMemberComments', 0x31, 'yes'),
+('other_pwStrengthOnUpdate', 0x31, 'yes'),
+('other_scanComments', 0x31, 'yes'),
+('other_scanOutside', 0x30, 'yes'),
+('other_WFNet', 0x31, 'yes'),
+('scansEnabled_checkGSB', 0x31, 'yes'),
+('scansEnabled_checkHowGetIPs', 0x31, 'yes'),
+('scansEnabled_checkReadableConfig', 0x31, 'yes'),
+('scansEnabled_comments', 0x31, 'yes'),
+('scansEnabled_core', 0x31, 'yes'),
+('scansEnabled_coreUnknown', 0x31, 'yes'),
+('scansEnabled_diskSpace', 0x31, 'yes'),
+('scansEnabled_dns', 0x31, 'yes'),
+('scansEnabled_fileContents', 0x31, 'yes'),
+('scansEnabled_fileContentsGSB', 0x31, 'yes'),
+('scansEnabled_highSense', 0x30, 'yes'),
+('scansEnabled_malware', 0x31, 'yes'),
+('scansEnabled_oldVersions', 0x31, 'yes'),
+('scansEnabled_options', 0x31, 'yes'),
+('scansEnabled_passwds', 0x31, 'yes'),
+('scansEnabled_plugins', 0x30, 'yes'),
+('scansEnabled_posts', 0x31, 'yes'),
+('scansEnabled_scanImages', 0x30, 'yes'),
+('scansEnabled_suspectedFiles', 0x31, 'yes'),
+('scansEnabled_suspiciousAdminUsers', 0x31, 'yes'),
+('scansEnabled_suspiciousOptions', 0x31, 'yes'),
+('scansEnabled_themes', 0x30, 'yes'),
+('scansEnabled_wpscan_directoryListingEnabled', 0x31, 'yes'),
+('scansEnabled_wpscan_fullPathDisclosure', 0x31, 'yes'),
+('scanTime', 0x313533343732363032352e30313534, 'yes'),
+('scanType', 0x7374616e64617264, 'yes'),
+('scan_exclude', '', 'yes'),
+('scan_include_extra', '', 'yes'),
+('scan_maxDuration', '', 'yes'),
+('scan_maxIssues', 0x31303030, 'yes'),
+('schedMode', 0x6175746f, 'yes'),
+('schedStartHour', 0x3135, 'yes'),
+('scheduledScansEnabled', 0x31, 'yes'),
+('serverIP', 0x313533343732363030363b3138312e34392e38342e3834, 'yes'),
+('showAdminBarMenu', 0x31, 'yes'),
+('spamvertizeCheck', 0x31, 'yes'),
+('ssl_verify', 0x31, 'yes'),
+('startScansRemotely', 0x30, 'yes'),
+('supportContent', 0x7b22746f70223a5b7b227469746c65223a224920616d206c6f636b6564206f7574206f66206d792073697465222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f726174652d6c696d6974696e675c2f23692d616d2d6c6f636b65642d6f75742d6f662d6d792d73697465222c226f72646572223a307d2c7b227469746c65223a22576f726466656e63652037222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f74726f75626c6573686f6f74696e675c2f776f726466656e63652d375c2f222c226f72646572223a317d2c7b227469746c65223a22576f726466656e636520576562204170706c69636174696f6e204669726577616c6c202857414629222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f222c226f72646572223a327d2c7b227469746c65223a225363616e2054726f75626c6573686f6f74696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f74726f75626c6573686f6f74696e675c2f222c226f72646572223a337d2c7b227469746c65223a224f7074696d697a696e6720546865204669726577616c6c222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f6f7074696d697a696e672d7468652d6669726577616c6c5c2f222c226f72646572223a347d2c7b227469746c65223a225363616e20526573756c7473222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f7363616e2d726573756c74735c2f222c226f72646572223a357d2c7b227469746c65223a2250485020466174616c206572726f723a204661696c6564206f70656e696e6720726571756972656420776f726466656e63652d7761662e706870222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f237068702d666174616c2d6572726f722d6661696c65642d6f70656e696e672d72657175697265642d776f726466656e63652d7761662d706870222c226f72646572223a367d5d2c22616c6c223a5b7b227469746c65223a22576f726466656e636520616e642047445052202d2047656e6572616c20446174612050726f74656374696f6e20526567756c6174696f6e222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f67656e6572616c2d646174612d70726f74656374696f6e2d726567756c6174696f6e5c2f222c2265786365727074223a2244656669616e742c2074686520636f6d70616e7920626568696e6420576f726466656e63652c20686173207570646174656420697473207465726d73206f66207573652c207072697661637920706f6c696369657320616e6420736f6674776172652c2061732077656c6c206173206d61646520617661696c61626c65206120646174612070726f63657373696e672061677265656d656e7420746f206d656574204744505220636f6d706c69616e63652e20437573746f6d657273206d7573742072657669657720616e6420616772656520746f2075706461746564207465726d7320696e206f7264657220746f20636f6e74696e7565207573696e67206f75722070726f647563747320616e642073657276696365732e20576520616c736f2070726f76696465206120646174612070726f63657373696e672061677265656d656e7420696620796f75207175616c6966792061732061206461746120636f6e74726f6c6c657220756e6465722074686520474450522e222c226f72646572223a307d2c7b227469746c65223a2244617368626f617264222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f64617368626f6172645c2f222c2265786365727074223a2254686520576f726466656e63652044617368626f6172642070726f766964657320696e736967687420696e746f207468652063757272656e74207374617465206f6620796f75722073697465e28099732073656375726974792e222c226368696c6472656e223a5b7b227469746c65223a224f7074696f6e73222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f64617368626f6172645c2f6f7074696f6e735c2f222c226f72646572223a307d2c7b227469746c65223a22416c65727473222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f64617368626f6172645c2f616c657274735c2f222c226f72646572223a317d5d2c226f72646572223a317d2c7b227469746c65223a224669726577616c6c222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f222c2265786365727074223a2254686520576f726466656e636520576562204170706c69636174696f6e204669726577616c6c2069732061205048502062617365642c206170706c69636174696f6e206c6576656c206669726577616c6c20746861742066696c74657273206f7574206d616c6963696f757320726571756573747320746f20796f757220736974652e20222c226368696c6472656e223a5b7b227469746c65223a224f7074696d697a696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f6f7074696d697a696e672d7468652d6669726577616c6c5c2f222c226f72646572223a307d2c7b227469746c65223a224c6561726e696e67204d6f6465222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f6c6561726e696e672d6d6f64655c2f222c226f72646572223a317d2c7b227469746c65223a2253746174697374696373222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f737461746973746963735c2f222c226f72646572223a327d2c7b227469746c65223a224f7074696f6e73222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f6f7074696f6e735c2f222c226f72646572223a337d2c7b227469746c65223a22427275746520466f7263652050726f74656374696f6e222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f62727574652d666f7263655c2f222c226f72646572223a347d2c7b227469746c65223a2252617465204c696d6974696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f726174652d6c696d6974696e675c2f222c226f72646572223a357d2c7b227469746c65223a2254726f75626c6573686f6f74696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f6669726577616c6c5c2f74726f75626c6573686f6f74696e675c2f222c226f72646572223a367d5d2c226f72646572223a327d2c7b227469746c65223a22426c6f636b696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f626c6f636b696e675c2f222c2265786365727074223a2241736964652066726f6d20746865204669726577616c6c2072756c657320746861742070726f7465637420616761696e73742053514c2d696e6a656374696f6e2c2058535320616e64206d6f72652c20576f726466656e636520616c736f2068617320637573746f6d20666561747572657320666f72206164646974696f6e616c20626c6f636b696e672e20222c226368696c6472656e223a5b7b227469746c65223a22426c6f636b6564206f72204c6f636b6564204f7574222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f626c6f636b696e675c2f626c6f636b65642d6f722d6c6f636b65642d6f75745c2f222c226f72646572223a307d2c7b227469746c65223a22436f756e74727920426c6f636b696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f626c6f636b696e675c2f636f756e7472792d626c6f636b696e675c2f222c226f72646572223a317d2c7b227469746c65223a2254726f75626c6573686f6f74696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f626c6f636b696e675c2f74726f75626c6573686f6f74696e675c2f222c226f72646572223a327d5d2c226f72646572223a337d2c7b227469746c65223a225363616e222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f222c2265786365727074223a224120576f726466656e6365207363616e206578616d696e657320616c6c2066696c6573206f6e20796f757220576f726450726573732077656273697465206c6f6f6b696e6720666f72206d616c6963696f757320636f64652c206261636b646f6f72732c207368656c6c732074686174206861636b657273206861766520696e7374616c6c65642c206b6e6f776e206d616c6963696f75732055524c7320616e64206b6e6f776e207061747465726e73206f6620696e66656374696f6e732e222c226368696c6472656e223a5b7b227469746c65223a224f7074696f6e73222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f6f7074696f6e735c2f222c226f72646572223a307d2c7b227469746c65223a22526573756c7473222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f7363616e2d726573756c74735c2f222c226f72646572223a317d2c7b227469746c65223a225363686564756c696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f7363686564756c696e675c2f222c226f72646572223a327d2c7b227469746c65223a2254726f75626c6573686f6f74696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7363616e5c2f74726f75626c6573686f6f74696e675c2f222c226f72646572223a337d5d2c226f72646572223a347d2c7b227469746c65223a22546f6f6c73222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f222c2265786365727074223a22576f726466656e636520546f6f6c7320696e636c7564652054776f20466163746f722041757468656e7469636174696f6e2c2057686f6973204c6f6f6b75702c2050617373776f72642041756469742c20436f6d6d656e74205370616d2046696c7465722c204c697665205472616666696320616e6420446961676e6f73746963732e222c226368696c6472656e223a5b7b227469746c65223a2250617373776f7264204175646974696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f70617373776f72642d6175646974696e675c2f222c226f72646572223a307d2c7b227469746c65223a2257686f6973204c6f6f6b7570222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f77686f69732d6c6f6f6b75705c2f222c226f72646572223a317d2c7b227469746c65223a22436f6d6d656e74205370616d2046696c746572222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f636f6d6d656e742d7370616d2d66696c7465725c2f222c226f72646572223a327d2c7b227469746c65223a22446961676e6f7374696373222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f646961676e6f73746963735c2f222c226f72646572223a337d2c7b227469746c65223a224c6976652054726166666963222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f6c6976652d747261666669635c2f222c226f72646572223a347d2c7b227469746c65223a2254776f20466163746f722041757468656e7469636174696f6e222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f746f6f6c735c2f74776f2d666163746f722d61757468656e7469636174696f6e5c2f222c226f72646572223a357d5d2c226f72646572223a357d2c7b227469746c65223a22416476616e636564222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f222c2265786365727074223a22496620796f752077616e7420746f206b6e6f77206d6f72652061626f75742074686520746563686e6963616c2064657461696c73206f6620576f726466656e63652c20796f75276c6c2066696e642074686520616e737765727320696e20746869732073656374696f6e2e222c226368696c6472656e223a5b7b227469746c65223a2253797374656d20726571756972656d656e7473222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f73797374656d2d726571756972656d656e74735c2f222c226f72646572223a307d2c7b227469746c65223a2252656d6f7665206f72205265736574222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f72656d6f76652d6f722d72657365745c2f222c226f72646572223a317d2c7b227469746c65223a22436f6e7374616e7473222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f636f6e7374616e74735c2f222c226f72646572223a327d2c7b227469746c65223a224368616e67656c6f67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f6368616e67656c6f675c2f222c226f72646572223a337d2c7b227469746c65223a22546563686e6963616c2044657461696c73222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f746563686e6963616c2d64657461696c735c2f222c226f72646572223a347d2c7b227469746c65223a22576f726466656e636520415049222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f776f726466656e63652d6170695c2f222c226f72646572223a357d2c7b227469746c65223a2254726f75626c6573686f6f74696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f616476616e6365645c2f74726f75626c6573686f6f74696e675c2f222c226f72646572223a367d5d2c226f72646572223a367d2c7b227469746c65223a22576f726466656e6365205072656d69756d222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7072656d69756d5c2f222c2265786365727074223a22576f726466656e6365205072656d69756d20636f6d6573207769746820616e20495020426c61636b6c6973742c205265616c2054696d652050726f74656374696f6e20616e64206d756368206d6f72652e222c226368696c6472656e223a5b7b227469746c65223a224c6963656e7365204b6579222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7072656d69756d5c2f6170692d6b65795c2f222c226f72646572223a307d2c7b227469746c65223a2250726963696e67222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f7072656d69756d5c2f70726963696e675c2f222c226f72646572223a317d5d2c226f72646572223a377d2c7b227469746c65223a225369746520436c65616e696e6720616e6420536563757269747920417564697473222c227065726d616c696e6b223a2268747470733a5c2f5c2f7777772e776f726466656e63652e636f6d5c2f68656c705c2f73656375726974792d73657276696365735c2f222c2265786365727074223a224c6574206f6e65206f66206f757220536563757269747920416e616c797374732068656c7020796f7520636c65616e20796f757220696e6665637465642073697465206f7220696e737065637420697420666f722076756c6e65726162696c69746965732e222c226f72646572223a387d5d7d, 'yes'),
+('supportHash', 0x62396538323739383539393331646565636336323534356230636232636532313037306264323865613064386363646264383332313936636438303562633535, 'yes'),
+('timeoffset_wf', 0x30, 'yes'),
+('timeoffset_wf_updated', 0x31353334373236303034, 'yes'),
+('totalLoginHits', 0x31, 'yes'),
+('totalScansRun', 0x31, 'yes'),
+('touppBypassNextCheck', 0x30, 'yes'),
+('touppPromptNeeded', 0x30, 'yes'),
+('useNoc3Secure', 0x31, 'yes'),
+('vulnerabilities_plugin', 0x613a363a7b693a303b613a343a7b733a343a22736c7567223b733a373a22616b69736d6574223b733a31313a2266726f6d56657273696f6e223b733a353a22342e302e38223b733a31303a2276756c6e657261626c65223b623a303b733a343a226c696e6b223b623a303b7d693a313b613a343a7b733a343a22736c7567223b733a32353a22637573746f6d2d6373732d616e642d6a617661736372697074223b733a31313a2266726f6d56657273696f6e223b733a353a22322e302e39223b733a31303a2276756c6e657261626c65223b623a303b733a343a226c696e6b223b623a303b7d693a323b613a343a7b733a343a22736c7567223b733a31313a2268656c6c6f2d646f6c6c79223b733a31313a2266726f6d56657273696f6e223b733a333a22312e37223b733a31303a2276756c6e657261626c65223b623a303b733a343a226c696e6b223b623a303b7d693a333b613a343a7b733a343a22736c7567223b733a353a227479706573223b733a31313a2266726f6d56657273696f6e223b733a353a22322e332e33223b733a31303a2276756c6e657261626c65223b623a303b733a343a226c696e6b223b623a303b7d693a343b613a343a7b733a343a22736c7567223b733a393a22776f726466656e6365223b733a31313a2266726f6d56657273696f6e223b733a363a22372e312e3130223b733a31303a2276756c6e657261626c65223b623a303b733a343a226c696e6b223b623a303b7d693a353b613a343a7b733a343a22736c7567223b733a31343a2277702d73757065722d6361636865223b733a31313a2266726f6d56657273696f6e223b733a353a22312e362e33223b733a31303a2276756c6e657261626c65223b623a303b733a343a226c696e6b223b623a303b7d7d, 'yes'),
+('vulnRegex', 0x2f283f3a776f726466656e63655f746573745f76756c6e5f6d617463687c5c2f74696d7468756d625c2e7068707c5c2f7468756d625c2e7068707c5c2f7468756d62735c2e7068707c5c2f7468756d626e61696c5c2e7068707c5c2f7468756d626e61696c735c2e7068707c5c2f7468756d6e61696c735c2e7068707c5c2f63726f707065725c2e7068707c5c2f70696373697a655c2e7068707c5c2f726573697a65725c2e7068707c636f6e6e6563746f72735c2f75706c6f6164746573745c2e68746d6c7c636f6e6e6563746f72735c2f746573745c2e68746d6c7c6d696e676c65666f72756d616374696f6e7c75706c6f61646966795c2e7068707c616c6c7765626d656e75732d776f726470726573732d6d656e752d706c7567696e7c77702d6379636c652d706c61796c6973747c636f756e742d7065722d6461797c77702d6175746f796f75747562657c7061792d776974682d74776565747c636f6d6d656e742d726174696e675c2f636b2d70726f636573736b61726d615c2e706870292f69, 'yes'),
+('wafAlertInterval', 0x363030, 'yes'),
+('wafAlertOnAttacks', 0x31, 'yes'),
+('wafAlertThreshold', 0x313030, 'yes'),
+('wafAlertWhitelist', '', 'yes'),
+('wfKillRequested', 0x30, 'no'),
+('wfPeakMemory', 0x3130343835373630, 'no'),
+('wfScanStartVersion', 0x342e392e38, 'yes'),
+('wfStatusStartMsgs', 0x613a313a7b693a303b733a303a22223b7d, 'yes'),
+('wf_scanLastStatusTime', 0x30, 'yes'),
+('wf_scanRunning', '', 'yes'),
+('wf_summaryItems', 0x613a383a7b733a31323a227363616e6e6564506f737473223b693a303b733a31353a227363616e6e6564436f6d6d656e7473223b693a303b733a31323a227363616e6e656446696c6573223b693a303b733a31343a227363616e6e6564506c7567696e73223b693a303b733a31333a227363616e6e65645468656d6573223b693a303b733a31323a227363616e6e65645573657273223b693a303b733a31313a227363616e6e656455524c73223b693a303b733a31303a226c617374557064617465223b693a313533343732363032343b7d, 'yes'),
+('whitelisted', '', 'yes'),
+('wp_home_url', 0x687474703a2f2f6c6f63616c686f73742f65786973746179612d74657374, 'yes'),
+('wp_site_url', 0x687474703a2f2f6c6f63616c686f73742f65786973746179612d74657374, 'yes');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfCrawlers`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfCrawlers` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `patternSig` binary(16) NOT NULL,
+  `status` char(8) NOT NULL,
+  `lastUpdate` int(10) unsigned NOT NULL,
+  `PTR` varchar(255) DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfFileChanges`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfFileChanges` (
+  `filenameHash` char(64) NOT NULL,
+  `file` varchar(1000) NOT NULL,
+  `md5` char(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfFileMods`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfFileMods` (
+  `filenameMD5` binary(16) NOT NULL,
+  `filename` varchar(1000) NOT NULL,
+  `knownFile` tinyint(3) unsigned NOT NULL,
+  `oldMD5` binary(16) NOT NULL,
+  `newMD5` binary(16) NOT NULL,
+  `SHAC` binary(32) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `stoppedOnSignature` varchar(255) NOT NULL DEFAULT '',
+  `stoppedOnPosition` int(10) unsigned NOT NULL DEFAULT '0',
+  `isSafeFile` varchar(1) NOT NULL DEFAULT '?'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfHits`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfHits` (
+  `id` int(10) unsigned NOT NULL,
+  `attackLogTime` double(17,6) unsigned NOT NULL,
+  `ctime` double(17,6) unsigned NOT NULL,
+  `IP` binary(16) DEFAULT NULL,
+  `jsRun` tinyint(4) DEFAULT '0',
+  `statusCode` int(11) NOT NULL DEFAULT '200',
+  `isGoogle` tinyint(4) NOT NULL,
+  `userID` int(10) unsigned NOT NULL,
+  `newVisit` tinyint(3) unsigned NOT NULL,
+  `URL` text,
+  `referer` text,
+  `UA` text,
+  `action` varchar(64) NOT NULL DEFAULT '',
+  `actionDescription` text,
+  `actionData` text
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `wp_wfHits`
+--
+
+INSERT INTO `wp_wfHits` (`id`, `attackLogTime`, `ctime`, `IP`, `jsRun`, `statusCode`, `isGoogle`, `userID`, `newVisit`, `URL`, `referer`, `UA`, `action`, `actionDescription`, `actionData`) VALUES
+(1, 0.000000, 1534726702.901195, 0x00000000000000000000000000000001, 1, 200, 0, 1, 0, 'http://localhost/existaya-test/wp-login.php?action=logout&_wpnonce=09f3dac781', 'http://localhost/existaya-test/wp-admin/themes.php', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', 'logout', NULL, NULL),
+(2, 0.000000, 1534726704.383188, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/wp-login.php?loggedout=true', 'http://localhost/existaya-test/wp-admin/themes.php', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(3, 0.000000, 1534726723.928378, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(4, 0.000000, 1534726731.863527, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/', 'http://localhost/existaya-test/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(5, 0.000000, 1534726743.870835, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/promociones/', 'http://localhost/existaya-test/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(6, 0.000000, 1534726818.535588, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/', 'http://localhost/existaya-test/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(7, 0.000000, 1534726826.799645, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/', 'http://localhost/existaya-test/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(8, 0.000000, 1534726856.890440, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/', 'http://localhost/existaya-test/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(9, 0.000000, 1534726869.626681, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/novedades/', 'http://localhost/existaya-test/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL),
+(10, 0.000000, 1534726873.938164, 0x00000000000000000000000000000001, 1, 200, 0, 0, 0, 'http://localhost/existaya-test/promociones/', 'http://localhost/existaya-test/novedades/', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36', '', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfHoover`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfHoover` (
+  `id` int(10) unsigned NOT NULL,
+  `owner` text,
+  `host` text,
+  `path` text,
+  `hostKey` varbinary(124) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfIssues`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfIssues` (
+  `id` int(10) unsigned NOT NULL,
+  `time` int(10) unsigned NOT NULL,
+  `lastUpdated` int(10) unsigned NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `severity` tinyint(3) unsigned NOT NULL,
+  `ignoreP` char(32) NOT NULL,
+  `ignoreC` char(32) NOT NULL,
+  `shortMsg` varchar(255) NOT NULL,
+  `longMsg` text,
+  `data` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfKnownFileList`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfKnownFileList` (
+  `id` int(11) unsigned NOT NULL,
+  `path` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfLeechers`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfLeechers` (
+  `eMin` int(10) unsigned NOT NULL,
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `hits` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `wp_wfLeechers`
+--
+
+INSERT INTO `wp_wfLeechers` (`eMin`, `IP`, `hits`) VALUES
+(25578778, 0x00000000000000000000000000000001, 3),
+(25578779, 0x00000000000000000000000000000001, 1),
+(25578780, 0x00000000000000000000000000000001, 3),
+(25578781, 0x00000000000000000000000000000001, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfLiveTrafficHuman`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfLiveTrafficHuman` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `identifier` binary(32) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `expiration` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `wp_wfLiveTrafficHuman`
+--
+
+INSERT INTO `wp_wfLiveTrafficHuman` (`IP`, `identifier`, `expiration`) VALUES
+(0x00000000000000000000000000000001, 0x52691751589a5c33bb6389fcae64d249c952a5a5b273ca99b7ace94d7a9b807a, 1534813107);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfLocs`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfLocs` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `ctime` int(10) unsigned NOT NULL,
+  `failed` tinyint(3) unsigned NOT NULL,
+  `city` varchar(255) DEFAULT '',
+  `region` varchar(255) DEFAULT '',
+  `countryName` varchar(255) DEFAULT '',
+  `countryCode` char(2) DEFAULT '',
+  `lat` float(10,7) DEFAULT '0.0000000',
+  `lon` float(10,7) DEFAULT '0.0000000'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfLogins`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfLogins` (
+  `id` int(10) unsigned NOT NULL,
+  `hitID` int(11) DEFAULT NULL,
+  `ctime` double(17,6) unsigned NOT NULL,
+  `fail` tinyint(3) unsigned NOT NULL,
+  `action` varchar(40) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `userID` int(10) unsigned NOT NULL,
+  `IP` binary(16) DEFAULT NULL,
+  `UA` text
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `wp_wfLogins`
+--
+
+INSERT INTO `wp_wfLogins` (`id`, `hitID`, `ctime`, `fail`, `action`, `username`, `userID`, `IP`, `UA`) VALUES
+(1, 1, 1534726704.122735, 0, 'logout', 'gcivico', 1, 0x00000000000000000000000000000001, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfNotifications`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfNotifications` (
+  `id` varchar(32) NOT NULL DEFAULT '',
+  `new` tinyint(3) unsigned NOT NULL DEFAULT '1',
+  `category` varchar(255) NOT NULL,
+  `priority` int(11) NOT NULL DEFAULT '1000',
+  `ctime` int(10) unsigned NOT NULL,
+  `html` text NOT NULL,
+  `links` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfPendingIssues`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfPendingIssues` (
+  `id` int(10) unsigned NOT NULL,
+  `time` int(10) unsigned NOT NULL,
+  `lastUpdated` int(10) unsigned NOT NULL,
+  `status` varchar(10) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `severity` tinyint(3) unsigned NOT NULL,
+  `ignoreP` char(32) NOT NULL,
+  `ignoreC` char(32) NOT NULL,
+  `shortMsg` varchar(255) NOT NULL,
+  `longMsg` text,
+  `data` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfReverseCache`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfReverseCache` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `host` varchar(255) NOT NULL,
+  `lastUpdate` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfScanners`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfScanners` (
+  `eMin` int(10) unsigned NOT NULL,
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `hits` smallint(5) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfSNIPCache`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfSNIPCache` (
+  `id` int(10) unsigned NOT NULL,
+  `IP` varchar(45) NOT NULL DEFAULT '',
+  `expiration` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `body` varchar(255) NOT NULL DEFAULT '',
+  `count` int(10) unsigned NOT NULL DEFAULT '0',
+  `type` int(10) unsigned NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfStatus`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfStatus` (
+  `id` bigint(20) unsigned NOT NULL,
+  `ctime` double(17,6) unsigned NOT NULL,
+  `level` tinyint(3) unsigned NOT NULL,
+  `type` char(5) NOT NULL,
+  `msg` varchar(1000) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `wp_wfStatus`
+--
+
+INSERT INTO `wp_wfStatus` (`id`, `ctime`, `level`, `type`, `msg`) VALUES
+(1, 1534726024.506969, 10, 'info', 'SUM_PREP:Preparing a new scan.'),
+(2, 1534726024.581753, 1, 'info', 'Initiating quick scan'),
+(3, 1534726024.657028, 10, 'info', 'SUM_START:Scanning for old themes, plugins and core files'),
+(4, 1534726024.713759, 10, 'info', 'SUM_ENDOK:Scanning for old themes, plugins and core files'),
+(5, 1534726024.784385, 1, 'info', '-------------------'),
+(6, 1534726024.848890, 2, 'info', 'Wordfence used 0 B of memory for scan. Server peak memory usage was: 10 MB'),
+(7, 1534726024.881884, 1, 'info', 'Quick Scan Complete. Scanned in less than 1 second.'),
+(8, 1534726024.915514, 10, 'info', 'SUM_FINAL:Scan complete. Congratulations, no new problems found.');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `wp_wfVulnScanners`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_wfVulnScanners` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `ctime` int(10) unsigned NOT NULL,
+  `hits` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Índices para tablas volcadas
@@ -1102,6 +1738,167 @@ ALTER TABLE `wp_users`
   ADD KEY `user_email` (`user_email`);
 
 --
+-- Indices de la tabla `wp_wfBadLeechers`
+--
+ALTER TABLE `wp_wfBadLeechers`
+  ADD PRIMARY KEY (`eMin`,`IP`);
+
+--
+-- Indices de la tabla `wp_wfBlockedCommentLog`
+--
+ALTER TABLE `wp_wfBlockedCommentLog`
+  ADD PRIMARY KEY (`IP`,`unixday`,`blockType`);
+
+--
+-- Indices de la tabla `wp_wfBlockedIPLog`
+--
+ALTER TABLE `wp_wfBlockedIPLog`
+  ADD PRIMARY KEY (`IP`,`unixday`,`blockType`);
+
+--
+-- Indices de la tabla `wp_wfBlocks7`
+--
+ALTER TABLE `wp_wfBlocks7`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `type` (`type`),
+  ADD KEY `IP` (`IP`),
+  ADD KEY `expiration` (`expiration`);
+
+--
+-- Indices de la tabla `wp_wfConfig`
+--
+ALTER TABLE `wp_wfConfig`
+  ADD PRIMARY KEY (`name`);
+
+--
+-- Indices de la tabla `wp_wfCrawlers`
+--
+ALTER TABLE `wp_wfCrawlers`
+  ADD PRIMARY KEY (`IP`,`patternSig`);
+
+--
+-- Indices de la tabla `wp_wfFileChanges`
+--
+ALTER TABLE `wp_wfFileChanges`
+  ADD PRIMARY KEY (`filenameHash`);
+
+--
+-- Indices de la tabla `wp_wfFileMods`
+--
+ALTER TABLE `wp_wfFileMods`
+  ADD PRIMARY KEY (`filenameMD5`);
+
+--
+-- Indices de la tabla `wp_wfHits`
+--
+ALTER TABLE `wp_wfHits`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `k1` (`ctime`),
+  ADD KEY `k2` (`IP`,`ctime`),
+  ADD KEY `attackLogTime` (`attackLogTime`);
+
+--
+-- Indices de la tabla `wp_wfHoover`
+--
+ALTER TABLE `wp_wfHoover`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `k2` (`hostKey`);
+
+--
+-- Indices de la tabla `wp_wfIssues`
+--
+ALTER TABLE `wp_wfIssues`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `lastUpdated` (`lastUpdated`),
+  ADD KEY `status` (`status`),
+  ADD KEY `ignoreP` (`ignoreP`),
+  ADD KEY `ignoreC` (`ignoreC`);
+
+--
+-- Indices de la tabla `wp_wfKnownFileList`
+--
+ALTER TABLE `wp_wfKnownFileList`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `wp_wfLeechers`
+--
+ALTER TABLE `wp_wfLeechers`
+  ADD PRIMARY KEY (`eMin`,`IP`);
+
+--
+-- Indices de la tabla `wp_wfLiveTrafficHuman`
+--
+ALTER TABLE `wp_wfLiveTrafficHuman`
+  ADD PRIMARY KEY (`IP`,`identifier`),
+  ADD KEY `expiration` (`expiration`);
+
+--
+-- Indices de la tabla `wp_wfLocs`
+--
+ALTER TABLE `wp_wfLocs`
+  ADD PRIMARY KEY (`IP`);
+
+--
+-- Indices de la tabla `wp_wfLogins`
+--
+ALTER TABLE `wp_wfLogins`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `k1` (`IP`,`fail`),
+  ADD KEY `hitID` (`hitID`);
+
+--
+-- Indices de la tabla `wp_wfNotifications`
+--
+ALTER TABLE `wp_wfNotifications`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `wp_wfPendingIssues`
+--
+ALTER TABLE `wp_wfPendingIssues`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `lastUpdated` (`lastUpdated`),
+  ADD KEY `status` (`status`),
+  ADD KEY `ignoreP` (`ignoreP`),
+  ADD KEY `ignoreC` (`ignoreC`);
+
+--
+-- Indices de la tabla `wp_wfReverseCache`
+--
+ALTER TABLE `wp_wfReverseCache`
+  ADD PRIMARY KEY (`IP`);
+
+--
+-- Indices de la tabla `wp_wfScanners`
+--
+ALTER TABLE `wp_wfScanners`
+  ADD PRIMARY KEY (`eMin`,`IP`);
+
+--
+-- Indices de la tabla `wp_wfSNIPCache`
+--
+ALTER TABLE `wp_wfSNIPCache`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `expiration` (`expiration`),
+  ADD KEY `IP` (`IP`),
+  ADD KEY `type` (`type`);
+
+--
+-- Indices de la tabla `wp_wfStatus`
+--
+ALTER TABLE `wp_wfStatus`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `k1` (`ctime`),
+  ADD KEY `k2` (`type`);
+
+--
+-- Indices de la tabla `wp_wfVulnScanners`
+--
+ALTER TABLE `wp_wfVulnScanners`
+  ADD PRIMARY KEY (`IP`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -1124,7 +1921,7 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT de la tabla `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=259;
+  MODIFY `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=288;
 --
 -- AUTO_INCREMENT de la tabla `wp_postmeta`
 --
@@ -1154,12 +1951,57 @@ ALTER TABLE `wp_term_taxonomy`
 -- AUTO_INCREMENT de la tabla `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
-  MODIFY `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=30;
+  MODIFY `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
 --
 -- AUTO_INCREMENT de la tabla `wp_users`
 --
 ALTER TABLE `wp_users`
   MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfBlocks7`
+--
+ALTER TABLE `wp_wfBlocks7`
+  MODIFY `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfHits`
+--
+ALTER TABLE `wp_wfHits`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfHoover`
+--
+ALTER TABLE `wp_wfHoover`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfIssues`
+--
+ALTER TABLE `wp_wfIssues`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfKnownFileList`
+--
+ALTER TABLE `wp_wfKnownFileList`
+  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfLogins`
+--
+ALTER TABLE `wp_wfLogins`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfPendingIssues`
+--
+ALTER TABLE `wp_wfPendingIssues`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfSNIPCache`
+--
+ALTER TABLE `wp_wfSNIPCache`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `wp_wfStatus`
+--
+ALTER TABLE `wp_wfStatus`
+  MODIFY `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
