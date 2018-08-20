@@ -140,8 +140,8 @@
 			<div class="row">
 				<div class="col-xl-12">
 					<?php $pagename = get_query_var('pagename');  ?>
-					<?php $pagename = (!empty($pagename)) ? $pagename : ''; ?>
-					<p class="mb-0 text-capitalize">Home / <b><?php echo $pagename; ?></b></p>
+					<?php $pagename = (!empty($pagename)) ? ' / '.$pagename : ''; ?>
+					<p class="mb-0 text-capitalize">Home<b><?php echo $pagename; ?></b></p>
 				</div>
 			</div>
 		</div>
