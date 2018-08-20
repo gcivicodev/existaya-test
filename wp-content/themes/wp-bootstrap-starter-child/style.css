@@ -226,6 +226,9 @@ body {
 	#slider {
 		margin-bottom: 50px;
 	}
+	.ln-section div:first-child {
+		padding-bottom: 15px;
+	}
 }
 
 @media screen and (max-width: 768px) {
