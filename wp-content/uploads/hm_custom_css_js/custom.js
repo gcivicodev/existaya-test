@@ -1,0 +1,1 @@
+var $=window.jQuery;$(document).ready(function(){$('#slider').slick({dots:!0,infinite:!1,speed:300,slidesToShow:1,slidesToScroll:1,autoplay:!0,autoplaySpeed:2000,});$('[data-star]').on('click',function(){var n=$(this).attr('data-star');alert('Estrella número '+n)});console.log($('.navbar-toggler-icon').css('background-image'))})
